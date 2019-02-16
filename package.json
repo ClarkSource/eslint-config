@@ -4,6 +4,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "lint": "lerna run lint",
+    "test": "lerna run test"
+  },
   "devDependencies": {
     "lerna": "^3.11.0"
   }
