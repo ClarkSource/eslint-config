@@ -3,7 +3,11 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
-  extends: ['@clarkapp', 'plugin:@typescript-eslint/recommended'],
+  extends: [
+    '@clarkapp',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint'
+  ],
   rules: {
     indent: 'off',
     '@typescript-eslint/indent': ['warn', 2],
