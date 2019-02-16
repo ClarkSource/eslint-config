@@ -1,0 +1,33 @@
+{
+  "name": "@clarkapp/eslint-config-ember",
+  "version": "0.0.0",
+  "description": "Clark's eslint-config for Ember.js",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "ember",
+    "ember.js"
+  ],
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config-ember",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkSource/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
+  },
+  "dependencies": {
+    "@clarkapp/eslint-config-browser": "^0.0.0",
+    "eslint-plugin-ember": "^6.2.0",
+    "eslint-plugin-ember-best-practices": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.0"
+  }
+}

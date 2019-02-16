@@ -1,0 +1,35 @@
+{
+  "name": "@clarkapp/eslint-config",
+  "version": "0.0.0",
+  "description": "Clark's base eslint-config",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "base"
+  ],
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkSource/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-xo-space": "^0.21.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-unicorn": "^7.0.0",
+    "prettier": "^1.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.0"
+  }
+}

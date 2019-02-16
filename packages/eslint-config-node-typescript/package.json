@@ -1,0 +1,33 @@
+{
+  "name": "@clarkapp/eslint-config-node-typescript",
+  "version": "0.0.0",
+  "description": "Clark's eslint-config for Node.js using TypeScript",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "node",
+    "node.js",
+    "typescript"
+  ],
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config-node-typescript",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkSource/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
+  },
+  "dependencies": {
+    "@clarkapp/eslint-config-node": "^0.0.0",
+    "@clarkapp/eslint-config-typescript": "^0.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.0"
+  }
+}
