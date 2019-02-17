@@ -4,8 +4,8 @@ const { join } = require('path');
 
 module.exports = {
   extends: [
-    '@clarkapp/eslint-config/legacy',
-    join(__dirname, 'lib', 'common.js')
+    join(__dirname, 'lib', 'common.js'),
+    '@clarkapp/eslint-config/legacy'
   ],
   env: {
     es6: false

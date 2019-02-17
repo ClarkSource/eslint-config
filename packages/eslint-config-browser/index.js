@@ -3,7 +3,7 @@
 const { join } = require('path');
 
 module.exports = {
-  extends: ['@clarkapp', join(__dirname, 'lib', 'common.js')],
+  extends: [join(__dirname, 'lib', 'common.js'), '@clarkapp'],
   rules: {
     'unicorn/prefer-node-append': 'error',
     'unicorn/prefer-query-selector': 'error',
