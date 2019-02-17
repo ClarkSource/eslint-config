@@ -3,5 +3,8 @@
 const { join } = require('path');
 
 module.exports = {
-  extends: [join(__dirname, 'lib', 'common.js'), 'xo-space/esnext']
+  extends: ['xo-space/esnext', join(__dirname, 'lib', 'common.js')],
+  env: {
+    node: false
+  }
 };

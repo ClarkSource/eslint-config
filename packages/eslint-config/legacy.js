@@ -3,7 +3,7 @@
 const { join } = require('path');
 
 module.exports = {
-  extends: [join(__dirname, 'lib', 'common.js'), 'xo-space'],
+  extends: ['xo-space', join(__dirname, 'lib', 'common.js')],
   env: {
     es6: false
   }
