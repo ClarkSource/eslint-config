@@ -27,9 +27,6 @@
     "@clarkapp/eslint-config-node": "^0.0.2",
     "@clarkapp/eslint-config-typescript": "^0.0.2"
   },
-  "devDependencies": {
-    "eslint": "^5.14.0"
-  },
   "peerDependencies": {
     "typescript": "^3.3.3"
   }

@@ -26,8 +26,5 @@
     "@clarkapp/eslint-config-browser": "^0.0.2",
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-ember-best-practices": "^1.1.1"
-  },
-  "devDependencies": {
-    "eslint": "^5.14.0"
   }
 }

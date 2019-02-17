@@ -24,8 +24,5 @@
   },
   "dependencies": {
     "@clarkapp/eslint-config": "^0.0.2"
-  },
-  "devDependencies": {
-    "eslint": "^5.14.0"
   }
 }
