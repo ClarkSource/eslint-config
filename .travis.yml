@@ -12,7 +12,10 @@ jobs:
     - name: Test
       script: yarn test
     - stage: release
+      branches:
+        only:
+          - master
       provider: script
       skip_cleanup: true
       script:
-        - yarn run semantic-release
+        - yarn lerna publish --github-release  --conventional-commits --yes
