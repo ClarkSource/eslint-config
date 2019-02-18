@@ -27,9 +27,11 @@ module.exports = {
      */
     'ember/avoid-leaking-state-in-ember-objects': [
       'error',
-      ...DEFAULT_IGNORED_PROPERTIES,
-      'localClassNames',
-      'localClassNameBindings'
+      [
+        ...DEFAULT_IGNORED_PROPERTIES,
+        'localClassNames',
+        'localClassNameBindings'
+      ]
     ]
   },
   overrides: [
