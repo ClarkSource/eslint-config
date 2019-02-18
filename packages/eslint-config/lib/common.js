@@ -7,9 +7,7 @@ module.exports = {
     ...['best-practices', 'errors', 'style', 'variables'].map(r =>
       require.resolve(`eslint-config-airbnb-base/rules/${r}`)
     ),
-    'plugin:unicorn/recommended',
-    'plugin:prettier/recommended',
-    'prettier/unicorn'
+    'plugin:unicorn/recommended'
   ],
   rules: {
     /**
@@ -30,11 +28,6 @@ module.exports = {
 
     'unicorn/no-process-exit': 'off',
     'unicorn/no-new-buffer': 'off',
-
-    /**
-     * This enables the default prettier formatting, but with single quotes.
-     */
-    'prettier/prettier': ['error', { singleQuote: true }],
 
     /**
      * This allows short-circuit idioms, like:
