@@ -25,7 +25,7 @@ module.exports = {
      *
      * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/avoid-leaking-state-in-ember-objects.md
      */
-    'avoid-leaking-state-in-ember-objects': [
+    'ember/avoid-leaking-state-in-ember-objects': [
       'error',
       ...DEFAULT_IGNORED_PROPERTIES,
       'localClassNames',
