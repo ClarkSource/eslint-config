@@ -8,5 +8,15 @@ module.exports = {
   ],
   env: {
     node: false
+  },
+  rules: {
+    'arrow-parens': ['error', 'as-needed', { requireForBlockBody: false }],
+
+    'generator-star-spacing': [
+      'error',
+      { before: true, after: false, anonymous: 'neither' }
+    ],
+
+    'class-methods-use-this': 'off'
   }
 };

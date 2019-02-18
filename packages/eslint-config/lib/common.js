@@ -50,6 +50,20 @@ module.exports = {
       { allowShortCircuit: true, allowTernary: true }
     ],
 
-    'valid-jsdoc': 'off'
+    'valid-jsdoc': 'off',
+
+    /**
+     * This permits leading underscores in identifiers.
+     */
+    'no-underscore-dangle': 'off',
+
+    /**
+     * This permits the usage of the unary operators, as in ``i++` and `i--`.
+     */
+    'no-plusplus': 'off',
+
+    'no-empty-function': 'warn',
+
+    'consistent-return': 'off'
   }
 };
