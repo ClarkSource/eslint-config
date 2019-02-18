@@ -55,6 +55,19 @@ module.exports = {
      */
     'no-plusplus': 'off',
 
+    /**
+     * This allows the usage of `continue` in loops.
+     */
+    'no-continue': 'off',
+
+    /**
+     * This copies the restricted syntax settings from
+     * `eslint-config-airbnb-base`, but allows `ForOfStatement`.
+     */
+    'no-restricted-syntax': require('eslint-config-airbnb-base/rules/style').rules[
+      'no-restricted-syntax'
+    ].filter((s, i) => i === 0 || s.selector !== 'ForOfStatement'),
+
     'no-empty-function': 'warn',
 
     'consistent-return': 'off'
