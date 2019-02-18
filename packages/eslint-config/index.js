@@ -13,9 +13,37 @@ module.exports = {
   rules: {
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: false }],
 
+    /**
+     * ```js
+     * function* generator() {}
+     *
+     * function*() {}
+     * ```
+     */
     'generator-star-spacing': [
       'error',
-      { before: true, after: false, anonymous: 'neither' }
+      { before: false, after: true, anonymous: 'neither' }
+    ],
+
+    /**
+     * This enforces destructuring assignments, except for object destructuring
+     * assignment expressions, which would need to be wrapped in `()`.
+     */
+    'prefer-destructuring': [
+      'error',
+      {
+        VariableDeclarator: {
+          array: true,
+          object: true
+        },
+        AssignmentExpression: {
+          array: true,
+          object: false
+        }
+      },
+      {
+        enforceForRenamedProperties: false
+      }
     ],
 
     'class-methods-use-this': 'off'
