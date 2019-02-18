@@ -4,6 +4,9 @@ module.exports = {
   plugins: ['unicorn', 'prettier'],
   extends: [
     'eslint:recommended',
+    ...['best-practices', 'errors', 'style', 'variables'].map(r =>
+      require.resolve(`eslint-config-airbnb-base/rules/${r}`)
+    ),
     'plugin:unicorn/recommended',
     'plugin:prettier/recommended',
     'prettier/unicorn'
