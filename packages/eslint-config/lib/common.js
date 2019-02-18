@@ -43,6 +43,27 @@ module.exports = {
       { allowShortCircuit: true, allowTernary: true }
     ],
 
+    /**
+     * This enforces destructuring assignments, except for object destructuring
+     * assignment expressions, which would need to be wrapped in `()`.
+     */
+    'prefer-destructuring': [
+      'error',
+      {
+        VariableDeclarator: {
+          array: true,
+          object: true
+        },
+        AssignmentExpression: {
+          array: true,
+          object: false
+        }
+      },
+      {
+        enforceForRenamedProperties: false
+      }
+    ],
+
     'valid-jsdoc': 'off',
 
     /**
