@@ -1,9 +1,7 @@
 'use strict';
 
-const { join } = require('path');
-
 module.exports = {
-  extends: [join(__dirname, 'lib', 'common.js'), '@clarkapp'],
+  extends: [require.resolve('./lib/common'), '@clarkapp'],
   rules: {
     'unicorn/prefer-node-append': 'error',
     'unicorn/prefer-query-selector': 'error'

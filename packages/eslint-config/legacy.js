@@ -1,9 +1,7 @@
 'use strict';
 
-const { join } = require('path');
-
 module.exports = {
-  extends: ['xo-space', join(__dirname, 'lib', 'common.js')],
+  extends: ['xo-space', require.resolve('./lib/common')],
   env: {
     es6: false
   }

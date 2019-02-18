@@ -1,12 +1,7 @@
 'use strict';
 
-const { join } = require('path');
-
 module.exports = {
-  extends: [
-    join(__dirname, 'lib', 'common.js'),
-    '@clarkapp/eslint-config/legacy'
-  ],
+  extends: [require.resolve('./lib/common'), '@clarkapp/eslint-config/legacy'],
   env: {
     es6: false
   },
