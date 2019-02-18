@@ -22,7 +22,7 @@ module.exports = {
      */
     'generator-star-spacing': [
       'error',
-      { before: false, after: true, anonymous: 'neither', method: 'neither' }
+      { before: false, after: true, anonymous: 'neither', method: 'before' }
     ],
 
     /**
