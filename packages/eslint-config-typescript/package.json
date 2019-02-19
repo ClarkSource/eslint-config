@@ -24,6 +24,6 @@
   "dependencies": {
     "@clarkapp/eslint-config": "^0.1.9",
     "@typescript-eslint/eslint-plugin": "^1.2.0",
-    "@typescript-eslint/parser": "^1.2.0"
+    "@typescript-eslint/parser": "^1.4.0"
   }
 }
