@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: ['@clarkapp/node', '@clarkapp/typescript'],
+  extends: ['@clark/node', '@clark/typescript'],
   env: {
     node: true,
     browser: false

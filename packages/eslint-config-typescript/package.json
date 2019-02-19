@@ -1,5 +1,5 @@
 {
-  "name": "@clarkapp/eslint-config-typescript",
+  "name": "@clark/eslint-config-typescript",
   "version": "0.1.9",
   "description": "Clark's eslint-config for TypeScript",
   "keywords": [
@@ -22,7 +22,7 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "dependencies": {
-    "@clarkapp/eslint-config": "^0.1.9",
+    "@clark/eslint-config": "^0.1.9",
     "@typescript-eslint/eslint-plugin": "^1.2.0",
     "@typescript-eslint/parser": "^1.4.0"
   }

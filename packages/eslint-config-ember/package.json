@@ -1,5 +1,5 @@
 {
-  "name": "@clarkapp/eslint-config-ember",
+  "name": "@clark/eslint-config-ember",
   "version": "0.1.12",
   "description": "Clark's eslint-config for Ember.js",
   "keywords": [
@@ -23,7 +23,7 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "dependencies": {
-    "@clarkapp/eslint-config-browser": "^0.1.9",
+    "@clark/eslint-config-browser": "^0.1.9",
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-ember-best-practices": "^1.1.1"
   }

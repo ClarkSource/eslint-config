@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  extends: ['@clarkapp/ember', '@clarkapp/typescript']
+  extends: ['@clark/ember', '@clark/typescript']
 };

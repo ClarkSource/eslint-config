@@ -4,7 +4,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   extends: [
-    '@clarkapp',
+    '@clark',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint'
   ],

@@ -1,5 +1,5 @@
 {
-  "name": "@clarkapp/eslint-config-ember-typescript",
+  "name": "@clark/eslint-config-ember-typescript",
   "version": "0.1.12",
   "description": "Clark's eslint-config for Ember.js using TypeScript",
   "keywords": [
@@ -24,8 +24,8 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "dependencies": {
-    "@clarkapp/eslint-config-ember": "^0.1.12",
-    "@clarkapp/eslint-config-typescript": "^0.1.9"
+    "@clark/eslint-config-ember": "^0.1.12",
+    "@clark/eslint-config-typescript": "^0.1.9"
   },
   "peerDependencies": {
     "typescript": "^3.3.3"

@@ -2,7 +2,7 @@
 
 module.exports = {
   plugins: ['node'],
-  extends: ['@clarkapp', 'plugin:node/recommended'],
+  extends: ['@clark', 'plugin:node/recommended'],
   env: {
     node: true,
     browser: false

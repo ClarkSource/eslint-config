@@ -1,4 +1,4 @@
-# `@clarkapp/eslint-config-browser`
+# `@clark/eslint-config-browser`
 
 [![BuildStatus](https://travis-ci.org/ClarkSource/eslint-config.svg)](https://travis-ci.org/ClarkSource/eslint-config)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)

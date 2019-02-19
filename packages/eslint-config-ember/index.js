@@ -7,7 +7,7 @@ const {
 module.exports = {
   plugins: ['ember', 'ember-best-practices'],
   extends: [
-    '@clarkapp/browser',
+    '@clark/browser',
     'plugin:ember/recommended',
     'plugin:ember-best-practices/recommended'
   ],

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: [require.resolve('./lib/common'), '@clarkapp/eslint-config/legacy'],
+  extends: [require.resolve('./lib/common'), '@clark/eslint-config/legacy'],
   env: {
     es6: false
   },
