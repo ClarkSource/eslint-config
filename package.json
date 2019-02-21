@@ -11,6 +11,6 @@
   "devDependencies": {
     "eslint": "^5.14.1",
     "lerna": "^3.11.0",
-    "typescript": "^3.3.3"
+    "typescript": "^3.3.3333"
   }
 }
