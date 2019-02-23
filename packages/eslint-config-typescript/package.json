@@ -24,6 +24,6 @@
   "dependencies": {
     "@clark/eslint-config": "^0.1.13",
     "@typescript-eslint/eslint-plugin": "^1.4.0",
-    "@typescript-eslint/parser": "^1.4.0"
+    "@typescript-eslint/parser": "^1.4.1"
   }
 }
