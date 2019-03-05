@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Clark's base eslint-config",
   "keywords": [
     "eslint",
