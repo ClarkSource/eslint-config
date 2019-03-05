@@ -13,10 +13,7 @@ module.exports = {
     '@typescript-eslint/indent': ['warn', 2],
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/class-name-casing': 'error',
-    '@typescript-eslint/explicit-function-return-type': [
-      'error',
-      { allowExpressions: true }
-    ],
+    '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/interface-name-prefix': ['error', 'never'],
     '@typescript-eslint/member-delimiter-style': 'error',
     '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
