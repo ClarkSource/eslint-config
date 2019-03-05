@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-node",
-  "version": "0.1.14",
+  "version": "0.2.0",
   "description": "Clark's eslint-config for Node.js",
   "keywords": [
     "eslint",
@@ -23,7 +23,7 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "dependencies": {
-    "@clark/eslint-config": "^0.1.14",
+    "@clark/eslint-config": "^0.2.0",
     "eslint-plugin-node": "^8.0.1"
   }
 }
