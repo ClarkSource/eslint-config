@@ -9,7 +9,8 @@ module.exports = {
   extends: [
     '@clark/browser',
     'plugin:ember/recommended',
-    'plugin:ember-best-practices/recommended'
+    'plugin:ember-best-practices/recommended',
+    require.resolve('@clark/eslint-config/lib/parser-config')
   ],
   rules: {
     /**
