@@ -33,7 +33,38 @@ module.exports = {
         'localClassNames',
         'localClassNameBindings'
       ]
-    ]
+    ],
+
+    /**
+     * Disables `ember-best-practices/no-observers` in favor of just
+     * `ember/no-observers`, which is the same, but slightly more sophisticated.
+     *
+     * @see https://github.com/ember-best-practices/eslint-plugin-ember-best-practices/blob/master/lib/rules/no-observers.js
+     * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/lib/rules/no-observers.js
+     * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/no-observers.md
+     */
+    'ember-best-practices/no-observers': 'off',
+    'ember/no-observers': 'error',
+
+    /**
+     * Disables `ember-best-practices/no-attrs-snapshot` in favor of just
+     * `ember/no-attrs-snapshot`, which is the same, but slightly more
+     * sophisticated.
+     *
+     * @see https://github.com/ember-best-practices/eslint-plugin-ember-best-practices/blob/master/lib/rules/no-attrs-snapshot.js
+     * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/lib/rules/no-attrs-snapshot.js
+     * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/no-attrs-snapshot.md
+     */
+    'ember-best-practices/no-attrs-snapshot': 'off',
+    'ember/no-attrs-snapshot': 'error',
+
+    /**
+     * Since Ember 3.4+ this rule is not required any more, as the run loop is
+     * not starts automatically.
+     *
+     * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/jquery-ember-run.md
+     */
+    'ember/jquery-ember-run': 'off'
   },
   overrides: [
     {
