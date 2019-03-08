@@ -33,5 +33,17 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error'
-  }
+  },
+  overrides: [
+    {
+      /**
+       * `.d.ts` files contain no logic and have different requirements. So some
+       * rules are not applicable here.
+       */
+      files: '*.d.ts',
+      rules: {
+        'no-shadow': 'off'
+      }
+    }
+  ]
 };
