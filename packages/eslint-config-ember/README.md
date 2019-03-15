@@ -7,3 +7,166 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
 > Clark's eslint-config for Ember.js
+
+## Installation
+
+```bash
+# With TypeScript
+yarn add -D eslint @clark/eslint-config-ember @clark/eslint-config-node typescript @clark/eslint-config-ember-typescript
+
+# Without TypeScript
+yarn add -D eslint @clark/eslint-config-ember @clark/eslint-config-node
+```
+
+## Setup
+
+Ember projects consist of up to three different types of JS source files:
+
+**Apps**
+
+- Files in the `app` tree or `src` tree (Module Unification) and `tests` tree /
+  dummy app
+- Node.js source files, like `ember-cli-build.js` or `config/environment.js`
+
+**Addons**
+
+- Files in the `addon` tree or `src` tree (Module Unification) and `tests` tree /
+  dummy app
+- Files in the `app` tree, which usually re-export files from `addon`
+- Node.js source files, like `index.js`
+
+Node.js and Ember source files obviously have fundamentally different linting
+requirements. The official Ember blueprint currently solves this by adding
+[`overrides`](overrides) for Node files and just using a single `.eslintrc.js`.
+
+[overrides]: https://eslint.org/docs/user-guide/configuring#disabling-rules-only-for-a-group-of-files
+
+We have found this to be very brittle and hard to maintain on the long run. A
+detailed argument can be found in this
+[Pre-RFC #450 "change eslint blueprint"][ember-rfc].
+
+[ember-rfc]: https://github.com/emberjs/rfcs/issues/450
+
+While the world is still waiting for [eslint/rfcs#9][eslint-rfc] to bring a new
+and better config system to the table, we have found it much more feasible to
+create multiple [`root: true`][root] `.eslintrc.js` files instead of using
+`overrides`.
+
+[eslint-rfc]: https://github.com/eslint/rfcs/pull/9
+[root]: https://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy
+
+### Addons
+
+```
+.
+├── .eslintrc.js
+├── addon
+│   └── .eslintrc.js
+├── app
+│   └── .eslintrc.js
+└── tests
+    ├── .eslintrc.js
+    └── dummy
+        └── config
+            └── .eslintrc.js
+```
+
+```js
+// .eslintrc.js
+module.exports = {
+  root: true,
+  extends: '@clark/node'
+};
+```
+
+```js
+// addon/.eslintrc.js
+/* eslint-env node */
+module.exports = {
+  root: true,
+  extends: '@clark/ember-typescript'
+};
+```
+
+```js
+// app/.eslintrc.js
+/* eslint-env node */
+module.exports = {
+  root: true,
+  // Since `app` is merged with the parent app, which is not guaranteed to have
+  // TypeScript installed, we need to restrict ourselves to JavaScript only.
+  extends: '@clark/ember'
+};
+```
+
+```js
+// tests/.eslintrc.js
+/* eslint-env node */
+module.exports = {
+  root: true,
+  extends: '@clark/ember-typescript'
+};
+```
+
+```js
+// tests/dummy/config/.eslintrc.js
+module.exports = {
+  root: true,
+  extends: '@clark/node'
+};
+```
+
+#### Live Examples
+
+- [`ember-link`](https://github.com/buschtoens/ember-link)
+- [`ember-on-modifier`](https://github.com/buschtoens/ember-on-modifier)
+- [`ember-dead-code`](https://github.com/buschtoens/ember-dead-code)
+- [`ember-route-task-helper`](https://github.com/buschtoens/ember-route-task-helper)
+
+### Apps
+
+```
+.
+├── .eslintrc.js
+├── app
+│   └── .eslintrc.js
+└── tests
+    ├── .eslintrc.js
+    └── dummy
+        └── config
+            └── .eslintrc.js
+```
+
+```js
+// .eslintrc.js
+module.exports = {
+  root: true,
+  extends: '@clark/node'
+};
+```
+
+```js
+// app/.eslintrc.js
+/* eslint-env node */
+module.exports = {
+  root: true,
+  extends: '@clark/ember-typescript'
+};
+```
+
+```js
+// tests/.eslintrc.js
+/* eslint-env node */
+module.exports = {
+  root: true,
+  extends: '@clark/ember-typescript'
+};
+```
+
+```js
+// tests/dummy/config/.eslintrc.js
+module.exports = {
+  root: true,
+  extends: '@clark/node'
+};
+```
