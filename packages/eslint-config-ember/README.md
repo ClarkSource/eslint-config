@@ -89,6 +89,15 @@ module.exports = {
 ```
 
 ```js
+// addon-test-support/.eslintrc.js
+/* eslint-env node */
+module.exports = {
+  root: true,
+  extends: '@clark/ember-typescript'
+};
+```
+
+```js
 // app/.eslintrc.js
 /* eslint-env node */
 module.exports = {
