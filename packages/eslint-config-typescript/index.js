@@ -44,6 +44,19 @@ module.exports = {
       rules: {
         'no-shadow': 'off'
       }
+    },
+    {
+      /**
+       * Disabling this rule for `.ts` files because, it throws an error for
+       * exporting interfaces, and we can safely disable it since TypeScript
+       * will fail to compile with undefined vars, more info:
+       * https://github.com/typescript-eslint/typescript-eslint/issues/342
+       * https://github.com/eslint/typescript-eslint-parser/issues/437#issuecomment-435526531
+       */
+      files: '*.ts',
+      rules: {
+        'no-undef': 'off'
+      }
     }
   ]
 };
