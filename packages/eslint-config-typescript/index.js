@@ -10,7 +10,7 @@ module.exports = {
   ],
   rules: {
     indent: 'off',
-    '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/indent': 'off', // Prettier already takes care of this.
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
