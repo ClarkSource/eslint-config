@@ -8,8 +8,8 @@ module.exports = {
   },
   rules: {
     'unicorn/prefer-exponentiation-operator': 'off',
+    'unicorn/prefer-node-remove': 'off',
     'unicorn/prefer-node-append': 'off',
     'unicorn/prefer-query-selector': 'off'
-    // 'unicorn/prefer-node-remove': 'off'
   }
 };

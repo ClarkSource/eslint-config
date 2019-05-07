@@ -70,6 +70,17 @@ module.exports = {
 
     'no-empty-function': 'warn',
 
-    'consistent-return': 'off'
+    'consistent-return': 'off',
+
+    'unicorn/prevent-abbreviations': [
+      'warn',
+      {
+        replacements: {
+          args: {
+            arguments: false
+          }
+        }
+      }
+    ]
   }
 };

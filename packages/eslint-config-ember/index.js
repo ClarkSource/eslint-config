@@ -1,5 +1,14 @@
 'use strict';
 
+const merge = require('lodash.merge');
+
+const [
+  BASE_ABBREVIATIONS_LEVEL,
+  BASE_ABBREVIATIONS_CONFIG
+] = require('@clark/eslint-config/lib/common').rules[
+  'unicorn/prevent-abbreviations'
+];
+
 const {
   DEFAULT_IGNORED_PROPERTIES
 } = require('eslint-plugin-ember/lib/rules/avoid-leaking-state-in-ember-objects');
@@ -8,7 +17,7 @@ module.exports = {
   plugins: ['ember', 'ember-best-practices'],
   extends: [
     '@clark/browser',
-    '@clark/ember-order-imports',
+    // '@clark/ember-order-imports',
     'plugin:ember/recommended',
     'plugin:ember-best-practices/recommended',
     require.resolve('@clark/eslint-config/lib/parser-config')
@@ -193,7 +202,16 @@ module.exports = {
      * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/closure-actions.md
      */
     'ember-best-practices/no-send-action': 'off',
-    'ember/closure-actions': 'error'
+    'ember/closure-actions': 'error',
+
+    'unicorn/prevent-abbreviations': [
+      BASE_ABBREVIATIONS_LEVEL,
+      merge(BASE_ABBREVIATIONS_CONFIG, {
+        whitelist: {
+          didReceiveAttrs: true
+        }
+      })
+    ]
   },
   overrides: [
     {
