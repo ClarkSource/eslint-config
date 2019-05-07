@@ -8,6 +8,7 @@ module.exports = {
     require.resolve('./lib/last'),
     require.resolve('./lib/parser-config')
   ],
+  // eslint-disable-next-line unicorn/prevent-abbreviations
   env: {
     node: false
   },
