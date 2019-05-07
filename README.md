@@ -23,3 +23,5 @@ This repo contains all of [Clark](https://github.com/ClarkSource)'s
   from `eslint-config-browser` and adds Ember.js-specific rules to it.
 - [**`@clark/eslint-config-ember-typescript`**](/packages/eslint-config-ember-typescript):
   Combines `eslint-config-ember` and `eslint-config-typescript`.
+- [**`@clark/eslint-config-ember-order-imports`**](/packages/eslint-config-ember-order-imports):
+  Sorts ES module imports for Ember.js projects

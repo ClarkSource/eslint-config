@@ -8,6 +8,7 @@ module.exports = {
   plugins: ['ember', 'ember-best-practices'],
   extends: [
     '@clark/browser',
+    '@clark/ember-order-imports',
     'plugin:ember/recommended',
     'plugin:ember-best-practices/recommended',
     require.resolve('@clark/eslint-config/lib/parser-config')
