@@ -182,7 +182,7 @@ module.exports = {
 
     /**
      * Disables `ember-best-practices/no-global-jquery` in favor of just
-     * `ember/require-super-in-init`, which is the same, but slightly more
+     * `ember/no-global-jquery`, which is the same, but slightly more
      * sophisticated.
      *
      * @see https://github.com/ember-best-practices/eslint-plugin-ember-best-practices/blob/master/lib/rules/no-global-jquery.js
