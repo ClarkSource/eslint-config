@@ -29,6 +29,6 @@
     "eslint-plugin-node": "^9.0.1",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-unicorn": "^8.0.2",
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.1"
   }
 }
