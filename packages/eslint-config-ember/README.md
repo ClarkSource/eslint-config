@@ -55,6 +55,9 @@ create multiple [`root: true`][root] `.eslintrc.js` files instead of using
 [eslint-rfc]: https://github.com/eslint/rfcs/pull/9
 [root]: https://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy
 
+Remember to create `.eslintignore` files! Otherwise `eslint` might _seemingly_
+hang indefinetly, becaue it tries to lint your huge bundled dist files.
+
 ### Addons
 
 ```
