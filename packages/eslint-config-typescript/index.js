@@ -25,7 +25,14 @@ module.exports = {
     '@typescript-eslint/no-parameter-properties': 'error',
     '@typescript-eslint/no-triple-slash-reference': 'error',
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        args: 'after-used',
+        argsIgnorePattern: '^_',
+        caughtErrors: 'none'
+      }
+    ],
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/type-annotation-spacing': 'error',
