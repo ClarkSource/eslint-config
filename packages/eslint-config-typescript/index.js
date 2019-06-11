@@ -49,7 +49,13 @@ module.exports = {
        */
       files: '*.d.ts',
       rules: {
-        'no-shadow': 'off'
+        'no-shadow': 'off',
+
+        /**
+         * To support scoped packages in `types`, e.g.
+         * `types/ember__object.d.ts` which maps to `@ember/object`.
+         */
+        'unicorn/filename-case': 'off'
       }
     },
     {
