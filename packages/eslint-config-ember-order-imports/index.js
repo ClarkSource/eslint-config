@@ -15,9 +15,8 @@ module.exports = {
     'import-helpers/order-imports': [
       'error',
       {
-        'newlines-between': 'always',
+        newlinesBetween: 'always',
         groups: [
-          'builtin',
           // Testing modules
           [
             '/^qunit/',
@@ -27,8 +26,10 @@ module.exports = {
           ],
           // Ember.js modules
           ['/^ember$/', '/^@ember/', '/^ember-data/'],
-          ['external'],
-          [`/^${APP_NAME}\\//`, `/^dummy\\//`, 'internal'],
+          ['/^ember-/'],
+          ['module'],
+          ['absolute'],
+          [`/^${APP_NAME}\\//`, `/^dummy\\//`],
           ['parent', 'sibling', 'index']
         ],
         alphabetize: { order: 'asc', ignoreCase: true }
