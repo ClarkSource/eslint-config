@@ -1918,10 +1918,10 @@ eslint-module-utils@^2.4.0:
     debug "^2.6.8"
     pkg-dir "^2.0.0"
 
-eslint-plugin-ember-best-practices@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember-best-practices/-/eslint-plugin-ember-best-practices-1.1.1.tgz#407ec2f7548a6671127d66b79e8b7135375d36e7"
-  integrity sha512-ESCcaB1LJ676Qp76kv9B/yma/xF51CCQZgizaKwtbCr3ajFw4l/hndROSeu+SfbewQdpJvw6EkBZQsd7DUfJdA==
+eslint-plugin-ember-best-practices@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember-best-practices/-/eslint-plugin-ember-best-practices-1.1.2.tgz#6edb8f39ccf26dee18bc20b1ead0015001b2417c"
+  integrity sha512-fmygMs1PcIpTFIFtEQapLx0Ap7whG5VtK1bHqJtBSDCcKNVqyUnN2TsbGeIKzgOFNG2qUlNAJNeBut27OqbgHw==
   dependencies:
     requireindex "^1.1.0"
 
