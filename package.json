@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "eslint": "^6.1.0",
-    "lerna": "^3.16.1",
+    "lerna": "^3.16.2",
     "typescript": "^3.5.3"
   }
 }
