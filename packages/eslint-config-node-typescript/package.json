@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-node-typescript",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Clark's eslint-config for Node.js using TypeScript",
   "keywords": [
     "eslint",
@@ -24,8 +24,8 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "dependencies": {
-    "@clark/eslint-config-node": "^1.4.1",
-    "@clark/eslint-config-typescript": "^1.4.1"
+    "@clark/eslint-config-node": "^1.5.0",
+    "@clark/eslint-config-typescript": "^1.5.0"
   },
   "peerDependencies": {
     "typescript": "^3.3.3"
