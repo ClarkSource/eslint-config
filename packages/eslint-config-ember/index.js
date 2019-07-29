@@ -1,17 +1,15 @@
 'use strict';
 
-const merge = require('lodash.merge');
-
 const [
   BASE_ABBREVIATIONS_LEVEL,
   BASE_ABBREVIATIONS_CONFIG
 ] = require('@clark/eslint-config/lib/common').rules[
   'unicorn/prevent-abbreviations'
 ];
-
 const {
   DEFAULT_IGNORED_PROPERTIES
 } = require('eslint-plugin-ember/lib/rules/avoid-leaking-state-in-ember-objects');
+const merge = require('lodash.merge');
 
 module.exports = {
   plugins: ['ember', 'ember-best-practices'],
