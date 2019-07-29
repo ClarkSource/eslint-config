@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-node",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Clark's eslint-config for Node.js",
   "keywords": [
     "eslint",
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@clark/eslint-config": "^1.5.0",
-    "@clark/eslint-config-node-order-imports": "^1.5.0",
+    "@clark/eslint-config-node-order-imports": "^1.6.0",
     "eslint-plugin-node": "^9.1.0",
     "lodash.merge": "^4.6.2"
   }
