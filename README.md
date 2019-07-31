@@ -18,6 +18,8 @@ This repo contains all of [Clark](https://github.com/ClarkSource)'s
   Node.js-specific rules and sets the environment.
 - [**`@clark/eslint-config-node-typescript`**](/packages/eslint-config-node-typescript):
   Combines `eslint-config-node` and `eslint-config-typescript`.
+- [**`@clark/eslint-config-node-order-imports`**](/packages/eslint-config-node-order-imports):
+  Sorts ES module imports for Node.js projects
 - [**`@clark/eslint-config-browser`**](/packages/eslint-config-browser):
   Extends from the base config and sets the browser environment.
 - [**`@clark/eslint-config-ember`**](/packages/eslint-config-ember): Extends
