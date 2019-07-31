@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-browser",
-  "version": "1.5.0",
+  "version": "1.8.0",
   "description": "Clark's eslint-config for browsers",
   "keywords": [
     "eslint",
@@ -23,6 +23,6 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "dependencies": {
-    "@clark/eslint-config": "^1.5.0"
+    "@clark/eslint-config": "^1.8.0"
   }
 }
