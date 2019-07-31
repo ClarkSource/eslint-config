@@ -25,7 +25,13 @@ module.exports = {
             '/^ember-exam/'
           ],
           // Ember.js modules
-          ['/^ember$/', '/^@ember/', '/^ember-data/', '/^@glimmer/'],
+          [
+            '/^ember$/',
+            '/^@ember/',
+            '/^ember-data/',
+            '/^@glimmer/',
+            '/^require$/'
+          ],
           ['/^ember-/'],
           ['module'],
           ['absolute'],
