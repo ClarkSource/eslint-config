@@ -1,0 +1,8 @@
+node_modules/
+types/
+
+.eslintrc.js
+.gitignore
+tsconfig.json
+
+*.ts

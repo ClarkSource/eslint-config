@@ -1,0 +1,37 @@
+{
+  "name": "@clark/eslint-util-get-package",
+  "version": "1.8.0",
+  "description": "Finds the `package.json` a source file belongs to",
+  "keywords": [
+    "eslint",
+    "eslint-util",
+    "package"
+  ],
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-util-get-package",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkSource/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
+  },
+  "scripts": {
+    "lint": "eslint --ext ts .",
+    "prepack": "tsc --build --force",
+    "postpack": "tsc --build --clean"
+  },
+  "dependencies": {
+    "find-up": "^4.1.0"
+  },
+  "devDependencies": {
+    "@clark/eslint-config-node-typescript": "^1.8.0",
+    "eslint": "^6.1.0",
+    "typescript": "^3.5.3"
+  }
+}

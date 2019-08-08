@@ -1,9 +1,7 @@
 'use strict';
 
-const APP_NAME = require(`${process.cwd()}/package.json`).name;
-
 module.exports = {
-  plugins: ['import-helpers'],
+  plugins: ['@clark/import-helpers-with-package'],
   rules: {
     /**
      * This orders the the ES6 module imports.
@@ -12,7 +10,7 @@ module.exports = {
      *
      * @see https://github.com/skylines-project/skylines/blob/861a4b0d7025599c5546166253f342d1890590d4/ember/.eslintrc.js#L17-L33
      */
-    'import-helpers/order-imports': [
+    '@clark/import-helpers-with-package/order-imports': [
       'error',
       {
         newlinesBetween: 'always',
@@ -35,7 +33,7 @@ module.exports = {
           ['/^ember-/'],
           ['module'],
           ['absolute'],
-          [`/^${APP_NAME}\\//`, `/^dummy\\//`],
+          ['package', `/^dummy\\//`],
           ['parent', 'sibling', 'index']
         ],
         alphabetize: { order: 'asc', ignoreCase: true }

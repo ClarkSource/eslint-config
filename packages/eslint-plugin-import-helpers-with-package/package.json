@@ -1,0 +1,43 @@
+{
+  "name": "@clark/eslint-plugin-import-helpers-with-package",
+  "version": "1.8.0",
+  "description": "Extends `import-helpers/order-imports` so that it can infer the name of the package the file belongs to",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslint-plugin-import",
+    "order-imports",
+    "eslint-plugin-import-helpers",
+    "configurable",
+    "import"
+  ],
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-plugin-import-helpers-with-package",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkSource/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
+  },
+  "scripts": {
+    "lint": "eslint --ext ts .",
+    "prepack": "tsc --build --force",
+    "postpack": "tsc --build --clean"
+  },
+  "dependencies": {
+    "@clark/eslint-util-get-package": "^1.8.0",
+    "eslint-plugin-import-helpers": "^1.0.2"
+  },
+  "devDependencies": {
+    "@clark/eslint-config-node-typescript": "^1.8.0",
+    "@types/eslint": "^4.16.6",
+    "eslint": "^6.1.0",
+    "typescript": "^3.5.3"
+  }
+}
