@@ -26,7 +26,7 @@
     "@clark/eslint-config": "^1.8.0",
     "@clark/eslint-config-browser": "^1.8.0",
     "@clark/eslint-config-ember-order-imports": "^1.9.0",
-    "eslint-plugin-ember": "^6.8.0",
+    "eslint-plugin-ember": "^6.8.2",
     "eslint-plugin-ember-best-practices": "^1.1.2",
     "lodash.merge": "^4.6.2"
   }
