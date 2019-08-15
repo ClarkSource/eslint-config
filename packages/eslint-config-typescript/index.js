@@ -5,39 +5,30 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   extends: [
     '@clark',
+    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier/@typescript-eslint'
   ],
   rules: {
     indent: 'off',
     '@typescript-eslint/indent': 'off', // Prettier already takes care of this.
-    '@typescript-eslint/adjacent-overload-signatures': 'error',
-    '@typescript-eslint/class-name-casing': 'error',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/interface-name-prefix': ['error', 'never'],
-    '@typescript-eslint/member-delimiter-style': 'error',
-    '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
-    'no-array-constructor': 'off',
-    '@typescript-eslint/no-array-constructor': 'error',
-    '@typescript-eslint/no-empty-interface': 'error',
-    '@typescript-eslint/no-inferrable-types': 'error',
-    '@typescript-eslint/no-namespace': 'error',
+    '@typescript-eslint/consistent-type-assertions': [
+      'error',
+      {
+        assertionStyle: 'as',
+        objectLiteralTypeAssertions: 'allow-as-parameter'
+      }
+    ],
     '@typescript-eslint/no-parameter-properties': 'error',
-    '@typescript-eslint/no-triple-slash-reference': 'error',
-    'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
-        args: 'after-used',
+        ignoreRestSiblings: true,
         argsIgnorePattern: '^_',
-        caughtErrors: 'none'
+        caughtErrors: 'all' // https://mariusschulz.com/blog/optional-catch-binding-in-typescript
       }
     ],
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': 'error',
-    '@typescript-eslint/type-annotation-spacing': 'error',
-    '@typescript-eslint/explicit-member-accessibility': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error'
   },
