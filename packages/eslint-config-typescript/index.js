@@ -19,6 +19,7 @@ module.exports = {
         objectLiteralTypeAssertions: 'allow-as-parameter'
       }
     ],
+    '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-parameter-properties': 'error',
     '@typescript-eslint/no-unused-vars': [
       'error',
