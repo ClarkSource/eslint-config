@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-plugin-import-helpers-with-package",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "Extends `import-helpers/order-imports` so that it can infer the name of the package the file belongs to",
   "keywords": [
     "eslint",
@@ -31,11 +31,11 @@
     "postpack": "tsc --build --clean"
   },
   "dependencies": {
-    "@clark/eslint-util-get-package": "^1.9.0",
+    "@clark/eslint-util-get-package": "^1.10.0",
     "eslint-plugin-import-helpers": "^1.0.2"
   },
   "devDependencies": {
-    "@clark/eslint-config-node-typescript": "^1.8.0",
+    "@clark/eslint-config-node-typescript": "^1.10.0",
     "@types/eslint": "^4.16.8",
     "eslint": "^6.1.0",
     "typescript": "^3.5.3"
