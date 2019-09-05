@@ -26,7 +26,7 @@
     "eslint-config-prettier": "^6.2.0",
     "eslint-config-xo-space": "^0.21.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-unicorn": "^10.0.0",
     "prettier": "^1.18.2"
