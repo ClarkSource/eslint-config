@@ -10,5 +10,12 @@ module.exports = {
   rules: {
     'unicorn/prefer-add-event-listener': 'error',
     'unicorn/prefer-text-content': 'error'
+  },
+  overrides: {
+    files: ['**/.eslintrc.js'],
+    env: {
+      node: true,
+      browser: false
+    }
   }
 };
