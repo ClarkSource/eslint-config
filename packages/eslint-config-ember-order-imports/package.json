@@ -28,5 +28,8 @@
   },
   "dependencies": {
     "@clark/eslint-plugin-import-helpers-with-package": "^1.11.0"
+  },
+  "engines": {
+    "node": ">= 8.16.0"
   }
 }

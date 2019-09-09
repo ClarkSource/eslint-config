@@ -28,5 +28,8 @@
   },
   "dependencies": {
     "eslint-plugin-import-helpers": "^1.0.2"
+  },
+  "engines": {
+    "node": ">= 8.16.0"
   }
 }

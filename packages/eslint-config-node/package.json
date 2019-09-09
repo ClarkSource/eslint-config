@@ -27,5 +27,8 @@
     "@clark/eslint-config-node-order-imports": "^1.8.0",
     "eslint-plugin-node": "^10.0.0",
     "lodash.merge": "^4.6.2"
+  },
+  "engines": {
+    "node": ">= 8.16.0"
   }
 }

@@ -29,5 +29,8 @@
     "eslint-plugin-ember": "^7.0.0",
     "eslint-plugin-ember-best-practices": "^1.1.2",
     "lodash.merge": "^4.6.2"
+  },
+  "engines": {
+    "node": ">= 8.16.0"
   }
 }
