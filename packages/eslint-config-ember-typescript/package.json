@@ -29,5 +29,8 @@
   },
   "peerDependencies": {
     "typescript": "^3.3.3"
+  },
+  "engines": {
+    "node": ">= 8.16.0"
   }
 }

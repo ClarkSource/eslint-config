@@ -39,5 +39,8 @@
     "@types/eslint": "^6.1.1",
     "eslint": "^6.3.0",
     "typescript": "^3.6.2"
+  },
+  "engines": {
+    "node": ">= 8.16.0"
   }
 }
