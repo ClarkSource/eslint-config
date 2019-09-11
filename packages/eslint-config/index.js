@@ -6,8 +6,7 @@ module.exports = {
     require.resolve('./lib/common'),
     require.resolve('eslint-config-airbnb-base/rules/es6'),
     require.resolve('./lib/last'),
-    require.resolve('./lib/parser-config'),
-    require.resolve('./lib/overrides')
+    require.resolve('./lib/parser-config')
   ],
   // eslint-disable-next-line unicorn/prevent-abbreviations
   env: {
@@ -50,5 +49,6 @@ module.exports = {
     ],
 
     'class-methods-use-this': 'off'
-  }
+  },
+  overrides: require('./lib/overrides').overrides
 };
