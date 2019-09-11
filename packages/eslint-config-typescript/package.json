@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-typescript",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "Clark's eslint-config for TypeScript",
   "keywords": [
     "eslint",
@@ -22,7 +22,7 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "dependencies": {
-    "@clark/eslint-config": "^1.12.0",
+    "@clark/eslint-config": "^1.13.0",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0"
   },
