@@ -38,7 +38,7 @@
     "@clark/eslint-config-node-typescript": "^1.14.1",
     "@types/eslint": "^6.1.2",
     "eslint": "^6.5.1",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.4"
   },
   "engines": {
     "node": ">= 8.16.0"
