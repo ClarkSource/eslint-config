@@ -30,6 +30,19 @@ module.exports = {
     'unicorn/no-new-buffer': 'off',
 
     /**
+     * We agree with the rule, but sometimes code is just much nicer /
+     * consistent, when functions are declared inline, even though they don't
+     * close over the local scope. So we diminish this to just be a warning.
+     *
+     * There's also currently a bug in the rule (#372), that reports false
+     * positives.
+     *
+     * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/consistent-function-scoping.md
+     * @see https://github.com/sindresorhus/eslint-plugin-unicorn/issues/372
+     */
+    'unicorn/consistent-function-scoping': 'warn',
+
+    /**
      * This allows short-circuit idioms, like:
      *
      * ```js
