@@ -22,6 +22,28 @@ module.exports = {
   ],
   rules: {
     /**
+     * By default assigning a property to itself is forbidden. Since this is
+     * required when updating not deeply tracked non-primitives in Ember, we
+     * allow it here.
+     *
+     * ```ts
+     * class Foo {
+     *   @tracked array = [];
+     *
+     *   pushRandomNumber() {
+     *     this.array.push(Math.random());
+     *     this.array = this.array;
+     *   }
+     * }
+     * ```
+     *
+     * @see https://eslint.org/docs/rules/no-self-assign
+     * @see https://stackoverflow.com/questions/57468327/why-wont-my-tracked-array-update-in-ember-octane
+     * @see https://github.com/pzuraq/tracked-built-ins
+     */
+    'no-self-assign': ['error', { props: false }],
+
+    /**
      * Ember does not allow deeply-nested computed property dependent keys with
      * `@each`, like `todos.@each.owner.name`.
      *
