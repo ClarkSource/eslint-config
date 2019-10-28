@@ -5,6 +5,14 @@ module.exports = {
 
   /**
    * Since the order of application is `ember` and _then_ `typescript`, rules
+   * set in `typescript` and it's base configs, override configs in `ember`.
+   * This also includes the full eslint base config again, for which we want to
+   * disable or diminish a few rules.
+   */
+  rules: require('@clark/eslint-config-ember').rules,
+
+  /**
+   * Since the order of application is `ember` and _then_ `typescript`, rules
    * set in `typescript`, override overrides in `ember`. While we in general
    * want any regular rules in `typescript` to override any regular rules in
    * `ember`, we want the overrides in `ember` to take effect.
