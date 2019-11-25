@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@clark/eslint-config": "^1.16.0",
-    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
     "@typescript-eslint/parser": "^2.8.0"
   },
   "engines": {
