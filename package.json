@@ -9,7 +9,7 @@
     "test": "lerna run test"
   },
   "devDependencies": {
-    "eslint": "^6.7.0",
+    "eslint": "^6.7.1",
     "lerna": "^3.19.0",
     "typescript": "^3.7.2"
   }
