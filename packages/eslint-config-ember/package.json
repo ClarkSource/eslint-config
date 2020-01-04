@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-ember",
-  "version": "1.16.0",
+  "version": "1.17.0",
   "description": "Clark's eslint-config for Ember.js",
   "keywords": [
     "eslint",
@@ -23,9 +23,9 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "dependencies": {
-    "@clark/eslint-config": "^1.16.0",
-    "@clark/eslint-config-browser": "^1.16.0",
-    "@clark/eslint-config-ember-order-imports": "^1.16.0",
+    "@clark/eslint-config": "^1.17.0",
+    "@clark/eslint-config-browser": "^1.17.0",
+    "@clark/eslint-config-ember-order-imports": "^1.17.0",
     "eslint-plugin-ember": "^7.7.2",
     "eslint-plugin-ember-best-practices": "^1.1.2",
     "lodash.merge": "^4.6.2"
