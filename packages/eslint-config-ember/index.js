@@ -227,9 +227,7 @@ module.exports = {
     'unicorn/prevent-abbreviations': [
       BASE_ABBREVIATIONS_LEVEL,
       merge(BASE_ABBREVIATIONS_CONFIG, {
-        whitelist: {
-          didReceiveAttrs: true
-        }
+        whitelist: require('./allowed-abbreviations')
       })
     ]
   },
