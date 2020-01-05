@@ -17,7 +17,14 @@ module.exports = {
        */
       convertPath: {
         '**/*.ts': ['^(.+?)\\.ts$', '$1.js']
-      }
+      },
+
+      /**
+       * This defuses `node/no-missing-import` for `.ts` files .
+       *
+       * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-import.md#shared-settings
+       */
+      tryExtensions: ['.js', '.json', '.node', '.ts']
     }
   },
   rules: {
