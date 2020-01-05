@@ -1,2 +1,3 @@
 *.js
+!index.ts.js
 !.eslintrc.js

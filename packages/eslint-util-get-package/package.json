@@ -10,7 +10,7 @@
   "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
   "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-util-get-package",
   "license": "ISC",
-  "main": "index.js",
+  "main": "index.ts.js",
   "publishConfig": {
     "access": "public"
   },
@@ -23,8 +23,12 @@
   },
   "scripts": {
     "lint": "eslint --ext ts .",
-    "prepack": "tsc --build --force",
-    "postpack": "tsc --build --clean"
+    "build": "tsc --build --force",
+    "clean": "tsc --build --clean",
+    "patch-main-prod": "../../tools/patch-json-object.js package.json '{ \"main\": \"index.js\" }'",
+    "patch-main-dev": "../../tools/patch-json-object.js package.json '{ \"main\": \"index.ts.js\" }'",
+    "prepack": "yarn build  && yarn patch-main-prod",
+    "postpack": "yarn clean &&  yarn patch-main-dev"
   },
   "dependencies": {
     "find-up": "^4.1.0"
@@ -32,6 +36,7 @@
   "devDependencies": {
     "@clark/eslint-config-node-typescript": "^1.17.0",
     "eslint": "^6.8.0",
+    "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
   },
   "engines": {

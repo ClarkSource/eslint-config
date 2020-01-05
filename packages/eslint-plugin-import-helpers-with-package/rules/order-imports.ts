@@ -7,7 +7,7 @@ import { rules } from 'eslint-plugin-import-helpers';
 const PACKAGE = 'package';
 const MATCH_NONE = '/foo/';
 
-export default {
+const ruleModule: Rule.RuleModule = {
   ...rules['order-imports'],
   create(context) {
     const options = context.options[0] || {};
@@ -61,4 +61,6 @@ export default {
 
     return rules['order-imports'].create(context);
   }
-} as Rule.RuleModule;
+};
+
+export default ruleModule;
