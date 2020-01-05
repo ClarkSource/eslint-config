@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
 
 import getPackage from '@clark/eslint-util-get-package';
+// eslint-disable-next-line node/no-unpublished-import
 import { Rule } from 'eslint';
 import { rules } from 'eslint-plugin-import-helpers';
 

@@ -5,12 +5,15 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint --ext ts,js .",
     "test": "lerna run test"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "lerna": "^3.20.2",
     "typescript": "^3.7.4"
+  },
+  "engines": {
+    "node": "^8.3 || ^12.0 || ^13.0"
   }
 }
