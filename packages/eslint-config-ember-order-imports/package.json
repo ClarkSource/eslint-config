@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-ember-order-imports",
-  "version": "1.17.0",
+  "version": "1.18.0",
   "description": "Sorts ES module imports for Ember.js projects",
   "keywords": [
     "eslint",
@@ -30,7 +30,7 @@
     "test": "printf '' | yarn eslint -c ./index.js --stdin"
   },
   "dependencies": {
-    "@clark/eslint-plugin-import-helpers-with-package": "^1.17.0"
+    "@clark/eslint-plugin-import-helpers-with-package": "^1.18.0"
   },
   "engines": {
     "node": ">= 8.16.0"
