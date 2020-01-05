@@ -21,6 +21,9 @@
   "bugs": {
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
+  "scripts": {
+    "test": "printf '' | yarn eslint -c ./index.js --stdin"
+  },
   "dependencies": {
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.9.0",
