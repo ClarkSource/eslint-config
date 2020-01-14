@@ -57,7 +57,21 @@ create multiple [`root: true`][root] `.eslintrc.js` files instead of using
 [root]: https://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy
 
 Remember to create `.eslintignore` files! Otherwise `eslint` might _seemingly_
-hang indefinetly, becaue it tries to lint your huge bundled dist files.
+hang indefinitely, because it tries to lint your huge bundled dist files or
+`node_modules`.
+
+Furthermore, we recommend to remove any linting integration from `ember-cli`.
+So this means uninstalling `ember-cli-eslint` and installing `eslint` instead.
+The default `lint:js` task (`eslint .`) is sufficient. When you want to use
+TypeScript, e.g. via
+[`@clark/eslint-config-ember-typescript`][eslint-config-ember-typescript] you
+have to update it to `eslint --ext ts,js .`.
+
+[eslint-config-ember-typescript]: /packages/eslint-config-ember-typescript
+
+You can also remove any other pre-installed eslint dependencies, like
+`eslint-plugin-ember` and `eslint-plugin-node`. They are included in our
+configs.
 
 ### Addons
 
