@@ -99,7 +99,6 @@ module.exports = {
 
 ```js
 // addon/.eslintrc.js
-/* eslint-env node */
 module.exports = {
   root: true,
   extends: '@clark/ember-typescript'
@@ -108,7 +107,6 @@ module.exports = {
 
 ```js
 // addon-test-support/.eslintrc.js
-/* eslint-env node */
 module.exports = {
   root: true,
   extends: '@clark/ember-typescript'
@@ -117,7 +115,6 @@ module.exports = {
 
 ```js
 // app/.eslintrc.js
-/* eslint-env node */
 module.exports = {
   root: true,
   // Since `app` is merged with the parent app, which is not guaranteed to have
@@ -128,7 +125,6 @@ module.exports = {
 
 ```js
 // tests/.eslintrc.js
-/* eslint-env node */
 module.exports = {
   root: true,
   extends: '@clark/ember-typescript'
@@ -174,7 +170,6 @@ module.exports = {
 
 ```js
 // app/.eslintrc.js
-/* eslint-env node */
 module.exports = {
   root: true,
   extends: '@clark/ember-typescript'
@@ -183,7 +178,6 @@ module.exports = {
 
 ```js
 // tests/.eslintrc.js
-/* eslint-env node */
 module.exports = {
   root: true,
   extends: '@clark/ember-typescript'
