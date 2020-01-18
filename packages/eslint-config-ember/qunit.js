@@ -3,6 +3,12 @@ module.exports = {
   extends: ['plugin:qunit/recommended', 'plugin:qunit/two'],
   rules: {
     /**
+     * @TODO re-enable, once upstream bug is fixed.
+     * @see https://github.com/platinumazure/eslint-plugin-qunit/issues/75
+     */
+    'qunit/no-global-module-test': 'off',
+
+    /**
      * QUnit test and module callbacks can share state by modifying properties
      * of `this` within those callbacks.
      *
