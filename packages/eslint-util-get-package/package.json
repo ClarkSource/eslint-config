@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-util-get-package",
-  "version": "1.18.0",
+  "version": "1.19.0",
   "description": "Finds the `package.json` a source file belongs to",
   "keywords": [
     "eslint",
@@ -34,7 +34,7 @@
     "find-up": "^4.1.0"
   },
   "devDependencies": {
-    "@clark/eslint-config-node-typescript": "^1.18.0",
+    "@clark/eslint-config-node-typescript": "^1.19.0",
     "eslint": "^6.8.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
