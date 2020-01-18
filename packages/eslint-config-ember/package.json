@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-ember",
-  "version": "1.19.0",
+  "version": "1.19.2",
   "description": "Clark's eslint-config for Ember.js",
   "keywords": [
     "eslint",
