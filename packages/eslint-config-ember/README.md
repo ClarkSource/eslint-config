@@ -127,7 +127,7 @@ module.exports = {
 // tests/.eslintrc.js
 module.exports = {
   root: true,
-  extends: '@clark/ember-typescript'
+  extends: '@clark/ember-typescript/test'
 };
 ```
 
@@ -180,7 +180,7 @@ module.exports = {
 // tests/.eslintrc.js
 module.exports = {
   root: true,
-  extends: '@clark/ember-typescript'
+  extends: '@clark/ember-typescript/test'
 };
 ```
 
