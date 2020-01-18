@@ -7,6 +7,7 @@ module.exports = {
      * @see https://github.com/platinumazure/eslint-plugin-qunit/issues/75
      */
     'qunit/no-global-module-test': 'off',
+    'qunit/no-global-stop-start': 'off',
 
     /**
      * QUnit test and module callbacks can share state by modifying properties
