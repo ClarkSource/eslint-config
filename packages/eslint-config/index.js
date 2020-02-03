@@ -48,7 +48,23 @@ module.exports = {
       }
     ],
 
-    'class-methods-use-this': 'off'
+    'class-methods-use-this': 'off',
+
+    /**
+     * Disallow implicit type coercion, like:
+     *
+     * ```js
+     * const b = !!foo;
+     * const b = ~foo.indexOf(".");
+     * const n = +foo;
+     * const n = 1 * foo;
+     * let s = "" + foo;
+     * foo += ``;
+     * ```
+     *
+     * @see https://eslint.org/docs/rules/no-implicit-coercion
+     */
+    'no-implicit-coercion': 'error'
   },
   overrides: require('./lib/overrides').overrides
 };
