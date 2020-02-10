@@ -27,7 +27,7 @@
   "dependencies": {
     "@clark/eslint-config": "^1.20.0",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
-    "@typescript-eslint/parser": "^2.19.0"
+    "@typescript-eslint/parser": "^2.19.1"
   },
   "engines": {
     "node": "^10.0 || ^12.0 || ^13.0"
