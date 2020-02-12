@@ -30,7 +30,23 @@ module.exports = {
       }
     ],
     'no-useless-constructor': 'off',
-    '@typescript-eslint/no-useless-constructor': 'error'
+    '@typescript-eslint/no-useless-constructor': 'error',
+
+    /**
+     * This allows short-circuit idioms, like:
+     *
+     * ```js
+     * this.super && this.super(...arguments);
+     *
+     * this.someAction ? this.someAction() : this.fallback();
+     * ```
+     *
+     * It disabled the eslint version and instead enables the TS version, to
+     * properly support optional chaining.
+     */
+    'no-unused-expressions': 'off',
+    '@typescript-eslint/no-unused-expressions': require('@clark/eslint-config/lib/common')
+      .rules['no-unused-expressions']
   },
   overrides: [
     {
