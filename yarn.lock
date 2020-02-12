@@ -2100,17 +2100,17 @@ eslint-config-prettier@^6.10.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-xo-space@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-xo-space/-/eslint-config-xo-space-0.23.0.tgz#0a47bd07d8685751b6ad78e3411e357588ab0f11"
-  integrity sha512-VPdO6xza7fnzAmsgQN8htOmsQ+IfQ9Ys1AtR9NEoT96oVoyjqncECeoEH6MnwFknSveGF7zjJBsjMIdhDC7tfQ==
+eslint-config-xo-space@^0.24.0:
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-xo-space/-/eslint-config-xo-space-0.24.0.tgz#48bcbf2fda7986edb1d3cd9163de3b07d2c2d584"
+  integrity sha512-y6vqCeKvbPsDBKJhwffamHHFJiegwJEioqdGigkIr5eNiCRd28A5wMapWLeCzvpMK03BWknTEEaoIlfQsqnmDg==
   dependencies:
-    eslint-config-xo "^0.28.0"
+    eslint-config-xo "^0.29.0"
 
-eslint-config-xo@^0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-xo/-/eslint-config-xo-0.28.0.tgz#e1f22609b522ded7af4986169cedb426fe2ed957"
-  integrity sha512-cc/csVIZ4pVnJqXKgbWqiktI03kPp5CL5ERir8GtyZzvlr22Vm41zqT3TWaEbdWOZiMbYtRmoLJ5rSQKuout3A==
+eslint-config-xo@^0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-xo/-/eslint-config-xo-0.29.0.tgz#d67e514f1047cd5388f75c9c574015eff38c705e"
+  integrity sha512-T1pgAOcIRSPXlgQPWI8fxDpIU1XRFSQW1RxtvHJPnZUV5KaHW4juKZUdAmTaPqOV1cp0wIkP32kVO1vKMWk6Jw==
   dependencies:
     confusing-browser-globals "1.0.9"
 
