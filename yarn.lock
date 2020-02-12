@@ -1561,6 +1561,11 @@ config-chain@^1.1.11:
     ini "^1.3.4"
     proto-list "~1.2.1"
 
+confusing-browser-globals@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-1.0.9.tgz#72bc13b483c0276801681871d4898516f8f54fdd"
+  integrity sha512-KbS1Y0jMtyPgIxjO7ZzMAuUpAKMt1SzCL9fsrKsX6b0zJPTaT0SiSPmewwVZg9UAO83HVIlEhZF84LIjZ0lmAw==
+
 confusing-browser-globals@^1.0.7:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-1.0.8.tgz#93ffec1f82a6e2bf2bc36769cc3a92fa20e502f3"
@@ -2095,17 +2100,19 @@ eslint-config-prettier@^6.10.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-xo-space@^0.22.0:
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-xo-space/-/eslint-config-xo-space-0.22.0.tgz#dbe57efa7ce93c38e924b9f0f1f1c04bc84426f0"
-  integrity sha512-c+qGdMg+2gw7DBcmZJnpIXLuKRLEMr/9/MFXPh2dY6gSb3Cx7O7sNUHTRLaB/DOMr5h29vwi+yhm6e5Ux1/TPA==
+eslint-config-xo-space@^0.23.0:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-xo-space/-/eslint-config-xo-space-0.23.0.tgz#0a47bd07d8685751b6ad78e3411e357588ab0f11"
+  integrity sha512-VPdO6xza7fnzAmsgQN8htOmsQ+IfQ9Ys1AtR9NEoT96oVoyjqncECeoEH6MnwFknSveGF7zjJBsjMIdhDC7tfQ==
   dependencies:
-    eslint-config-xo "^0.27.2"
+    eslint-config-xo "^0.28.0"
 
-eslint-config-xo@^0.27.2:
-  version "0.27.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-xo/-/eslint-config-xo-0.27.2.tgz#71aff3d5b5554e9e5b5e1853e21da7799bb53f1f"
-  integrity sha512-qEuZP0zNQkWpOdNZvWnfY2GNp1AZ33uXgeOXl4DN5YVLHFvekHbeSM2FFZ8A489fp1rCCColVRlJsYMf28o4DA==
+eslint-config-xo@^0.28.0:
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-xo/-/eslint-config-xo-0.28.0.tgz#e1f22609b522ded7af4986169cedb426fe2ed957"
+  integrity sha512-cc/csVIZ4pVnJqXKgbWqiktI03kPp5CL5ERir8GtyZzvlr22Vm41zqT3TWaEbdWOZiMbYtRmoLJ5rSQKuout3A==
+  dependencies:
+    confusing-browser-globals "1.0.9"
 
 eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
