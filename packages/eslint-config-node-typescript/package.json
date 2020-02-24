@@ -24,6 +24,7 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "scripts": {
+    "lint:rules": "../../tools/lint-rules-coverage.js ./index.js @typescript-eslint",
     "test": "printf '' | yarn eslint -c ./index.js --stdin"
   },
   "dependencies": {

@@ -5,7 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "eslint --ext ts,js .",
+    "lint:js": "eslint --ext ts,js .",
+    "lint:rules": "lerna run lint:rules",
     "test": "lerna run test"
   },
   "devDependencies": {
@@ -15,5 +16,8 @@
   },
   "engines": {
     "node": "^10.0 || ^12.0 || ^13.0"
+  },
+  "volta": {
+    "node": "12.16.1"
   }
 }

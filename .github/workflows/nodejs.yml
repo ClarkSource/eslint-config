@@ -19,6 +19,8 @@ jobs:
       - name: yarn install, yarn test
         run: |
           yarn install --frozen-lockfile --non-interactive
+          yarn lint:js
+          yarn lint:rules
           yarn test
         env:
           CI: true

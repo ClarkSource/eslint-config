@@ -11,6 +11,7 @@
   "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config-typescript",
   "license": "ISC",
   "main": "index.js",
+  "files": [],
   "publishConfig": {
     "access": "public"
   },
@@ -22,6 +23,7 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "scripts": {
+    "lint:rules": "../../tools/lint-rules-coverage.js ./index.js @typescript-eslint",
     "test": "printf '' | yarn eslint -c ./index.js --stdin"
   },
   "dependencies": {
