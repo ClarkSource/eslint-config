@@ -32,6 +32,15 @@ module.exports = {
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
 
+    // '@typescript-eslint/prefer-string-starts-ends-with': 'error',
+    // '@typescript-eslint/prefer-regexp-exec': 'error',
+    // '@typescript-eslint/prefer-readonly': 'warn',
+    '@typescript-eslint/prefer-optional-chain': 'error',
+    // '@typescript-eslint/prefer-nullish-coalescing': 'error',
+    // '@typescript-eslint/prefer-includes': 'error',
+    '@typescript-eslint/prefer-for-of': 'error',
+    '@typescript-eslint/prefer-as-const': 'error',
+
     /**
      * This allows short-circuit idioms, like:
      *
