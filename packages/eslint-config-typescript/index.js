@@ -46,7 +46,46 @@ module.exports = {
      */
     'no-unused-expressions': 'off',
     '@typescript-eslint/no-unused-expressions': require('@clark/eslint-config/lib/common')
-      .rules['no-unused-expressions']
+      .rules['no-unused-expressions'],
+
+    'default-param-last': 'off',
+    '@typescript-eslint/default-param-last': 'error',
+
+    'no-dupe-class-members': 'off',
+    '@typescript-eslint/no-dupe-class-members': 'error',
+
+    /**
+     * @note Requires parser services and is thus disabled.
+     *
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implied-eval.md
+     */
+    'no-implied-eval': 'off',
+    '@typescript-eslint/no-implied-eval': 'off',
+
+    'no-magic-numbers': 'off',
+    '@typescript-eslint/no-magic-numbers': 'off',
+
+    /**
+     * Disallow throwing strings.
+     *
+     * @note Requires parser services and is thus disabled.
+     *
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-throw-literal.md
+     */
+    'no-throw-literal': 'off',
+    '@typescript-eslint/no-throw-literal': 'off',
+
+    /**
+     * Asynchronous functions that don’t use await might not need to be
+     * asynchronous functions and could be the unintentional result of
+     * refactoring.
+     *
+     * @note Requires parser services and is thus disabled.
+     *
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/require-await.md
+     */
+    'require-await': 'off',
+    '@typescript-eslint/require-await': 'off'
   },
   overrides: [
     {
