@@ -224,6 +224,14 @@ module.exports = {
     'ember-best-practices/no-send-action': 'off',
     'ember/closure-actions': 'error',
 
+    /**
+     * Demotes this to just warning to avoid false positives for classes that
+     * implement their own `get` methods.
+     *
+     * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/no-get.md
+     */
+    'ember/no-get': 'warn',
+
     'unicorn/prevent-abbreviations': [
       BASE_ABBREVIATIONS_LEVEL,
       merge(BASE_ABBREVIATIONS_CONFIG, {
