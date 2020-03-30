@@ -37,7 +37,7 @@
     "@clark/eslint-config-node-typescript": "^1.23.0",
     "eslint": "^6.8.0",
     "ts-node": "^8.6.2",
-    "typescript": "^3.8.2"
+    "typescript": "^3.8.3"
   },
   "engines": {
     "node": "^10.0 || ^12.0 || ^13.0"
