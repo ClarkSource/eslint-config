@@ -16,16 +16,9 @@ module.exports = {
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: false }],
 
     /**
-     * ```js
-     * function* generator() {}
-     *
-     * function*() {}
-     * ```
+     * @see https://github.com/prettier/prettier/issues/7590
      */
-    'generator-star-spacing': [
-      'error',
-      { before: false, after: true, anonymous: 'neither', method: 'before' }
-    ],
+    'generator-star-spacing': 'off',
 
     /**
      * This enforces destructuring assignments, except for object destructuring
