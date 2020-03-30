@@ -28,7 +28,7 @@
   "dependencies": {
     "@clark/eslint-config": "^1.23.0",
     "@clark/eslint-config-node-order-imports": "^1.19.0",
-    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-node": "^11.1.0",
     "lodash.merge": "^4.6.2"
   },
   "engines": {
