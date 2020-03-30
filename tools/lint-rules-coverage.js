@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+// eslint-disable-next-line no-process-exit
+if (process.version.startsWith('v10')) process.exit(0);
+
 const { resolve } = require('path');
 
 const { CLIEngine } = require('eslint');
