@@ -6,6 +6,6 @@ module.exports = {
     /**
      * This enables the default prettier formatting, but with single quotes.
      */
-    'prettier/prettier': ['error', { singleQuote: true }]
+    'prettier/prettier': ['error', { singleQuote: true, trailingComma: 'none' }]
   }
 };
