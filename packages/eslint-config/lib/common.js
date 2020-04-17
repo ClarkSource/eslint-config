@@ -43,6 +43,14 @@ module.exports = {
     'unicorn/consistent-function-scoping': 'warn',
 
     /**
+     * We agree with the rule, but it's incompatible with DOM APIs, which
+     * unfortunately don't implement the `[Symbol.iterator]` protocol.
+     *
+     * @see https://github.com/sindresorhus/eslint-plugin-unicorn/issues/120#issuecomment-615220593
+     */
+    'unicorn/prefer-spread': 'warning',
+
+    /**
      * This allows short-circuit idioms, like:
      *
      * ```js
