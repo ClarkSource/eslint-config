@@ -48,7 +48,7 @@ module.exports = {
      *
      * @see https://github.com/sindresorhus/eslint-plugin-unicorn/issues/120#issuecomment-615220593
      */
-    'unicorn/prefer-spread': 'warning',
+    'unicorn/prefer-spread': 'warn',
 
     /**
      * This allows short-circuit idioms, like:
