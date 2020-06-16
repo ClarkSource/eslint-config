@@ -2,7 +2,6 @@
 
 module.exports = {
   extends: [require.resolve('./lib/common'), '@clark/eslint-config/legacy'],
-  // eslint-disable-next-line unicorn/prevent-abbreviations
   env: {
     es6: false
   },

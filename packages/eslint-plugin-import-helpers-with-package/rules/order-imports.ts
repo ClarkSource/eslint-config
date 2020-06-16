@@ -12,7 +12,6 @@ const ruleModule: Rule.RuleModule = {
   ...rules['order-imports'],
   create(context) {
     const options = context.options[0] || {};
-    // eslint-disable-next-line prefer-destructuring
     const groups: (string | string[])[] = options.groups || [];
 
     let packageName: string | undefined;

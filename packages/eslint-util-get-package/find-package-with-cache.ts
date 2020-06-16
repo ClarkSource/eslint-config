@@ -13,7 +13,7 @@ const matchPackage = (directory: string) => {
 
 export function findPackageWithCache(cwd: string) {
   const packagePath = findUpWithCache(matchPackage, { cwd });
-  if (!packagePath) return undefined;
+  if (!packagePath) return;
 
   // `require` itself is cached
   // eslint-disable-next-line @typescript-eslint/no-var-requires
