@@ -43,6 +43,21 @@ module.exports = {
     'unicorn/consistent-function-scoping': 'warn',
 
     /**
+     * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-reduce.md
+     */
+    'unicorn/no-reduce': 'warn',
+
+    /**
+     * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-useless-undefined.md
+     */
+    'unicorn/no-useless-undefined': 'warn',
+
+    /**
+     * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-null.md
+     */
+    'unicorn/no-null': 'warn',
+
+    /**
      * This allows short-circuit idioms, like:
      *
      * ```js

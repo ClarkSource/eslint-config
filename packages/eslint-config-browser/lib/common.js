@@ -2,7 +2,6 @@
 
 module.exports = {
   extends: ['xo-space/browser'],
-  // eslint-disable-next-line unicorn/prevent-abbreviations
   env: {
     node: false,
     browser: true

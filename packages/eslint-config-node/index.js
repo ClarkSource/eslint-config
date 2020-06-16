@@ -11,13 +11,11 @@ const merge = require('lodash.merge');
 module.exports = {
   plugins: ['node'],
   extends: ['@clark', 'plugin:node/recommended', '@clark/node-order-imports'],
-  // eslint-disable-next-line unicorn/prevent-abbreviations
   env: {
     node: true,
     browser: false
   },
   overrides: [
-    /* eslint-disable unicorn/prevent-abbreviations */
     {
       files: ['environment.js'],
       rules: {
@@ -45,6 +43,5 @@ module.exports = {
         ]
       }
     }
-    /* eslint-enable unicorn/prevent-abbreviations */
   ]
 };
