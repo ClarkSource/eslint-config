@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-ember-typescript",
-  "version": "1.25.1",
+  "version": "1.25.2",
   "description": "Clark's eslint-config for Ember.js using TypeScript",
   "keywords": [
     "eslint",
@@ -28,8 +28,8 @@
     "test": "printf '' | yarn eslint -c ./index.js --stdin && printf '' | yarn eslint -c ./test.js --stdin"
   },
   "dependencies": {
-    "@clark/eslint-config-ember": "^1.25.1",
-    "@clark/eslint-config-typescript": "^1.25.1"
+    "@clark/eslint-config-ember": "^1.25.2",
+    "@clark/eslint-config-typescript": "^1.25.2"
   },
   "peerDependencies": {
     "typescript": "^3.3.3"

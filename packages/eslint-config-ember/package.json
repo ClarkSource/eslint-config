@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-ember",
-  "version": "1.25.1",
+  "version": "1.25.2",
   "description": "Clark's eslint-config for Ember.js",
   "keywords": [
     "eslint",
@@ -26,9 +26,9 @@
     "test": "printf '' | yarn eslint -c ./index.js --stdin && printf '' | yarn eslint -c ./test.js --stdin"
   },
   "dependencies": {
-    "@clark/eslint-config": "^1.25.1",
-    "@clark/eslint-config-browser": "^1.25.1",
-    "@clark/eslint-config-ember-order-imports": "^1.25.1",
+    "@clark/eslint-config": "^1.25.2",
+    "@clark/eslint-config-browser": "^1.25.2",
+    "@clark/eslint-config-ember-order-imports": "^1.25.2",
     "eslint-plugin-ember": "^8.7.0",
     "eslint-plugin-ember-best-practices": "^1.1.2",
     "eslint-plugin-qunit": "^4.2.0",
