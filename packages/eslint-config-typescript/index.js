@@ -138,6 +138,11 @@ module.exports = {
         leadingUnderscore: 'allow'
       },
       {
+        selector: 'enumMember',
+        format: ['PascalCase'],
+        leadingUnderscore: 'prohibit'
+      },
+      {
         selector: 'typeLike',
         format: ['PascalCase']
       },
