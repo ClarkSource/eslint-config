@@ -23,7 +23,7 @@ module.exports = {
        *
        * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-import.md#shared-settings
        */
-      tryExtensions: ['.js', '.json', '.node', '.ts']
+      tryExtensions: ['.js', '.json', '.node', '.ts', '.d.ts']
     }
   },
   rules: {

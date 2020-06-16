@@ -41,6 +41,22 @@ module.exports = {
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-as-const': 'error',
 
+    'dot-notation': 'warn',
+    '@typescript-eslint/dot-notation': 'off',
+
+    'init-declarations': 'off',
+    '@typescript-eslint/init-declarations': 'warn',
+
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'error',
+
+    'no-invalid-this': 'off',
+    '@typescript-eslint/no-invalid-this': 'error',
+
+    'lines-between-class-members': 'off',
+    '@typescript-eslint/lines-between-class-members': require('@clark/eslint-config/lib/common')
+      .rules['lines-between-class-members'],
+
     /**
      * This allows short-circuit idioms, like:
      *
