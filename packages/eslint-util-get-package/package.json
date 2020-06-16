@@ -31,7 +31,8 @@
     "postpack": "yarn clean &&  yarn patch-main-dev"
   },
   "dependencies": {
-    "find-up": "^4.1.0"
+    "find-up": "^4.1.0",
+    "type-fest": "^0.15.1"
   },
   "devDependencies": {
     "@clark/eslint-config-node-typescript": "^1.24.4",

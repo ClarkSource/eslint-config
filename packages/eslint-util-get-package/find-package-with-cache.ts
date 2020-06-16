@@ -1,6 +1,7 @@
 import { join } from 'path';
 
 import { sync as findUpSync } from 'find-up';
+import type { PackageJson } from 'type-fest';
 
 import { findUpWithCache } from './find-up-with-cache';
 
@@ -11,7 +12,7 @@ const matchPackage = (directory: string) => {
   return findUpSync.exists(directory) ? packagePath : undefined;
 };
 
-export function findPackageWithCache(cwd: string) {
+export function findPackageWithCache(cwd: string): PackageJson | undefined {
   const packagePath = findUpWithCache(matchPackage, { cwd });
   if (!packagePath) return;
 
