@@ -41,8 +41,8 @@ module.exports = {
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-as-const': 'error',
 
-    'dot-notation': 'off',
-    '@typescript-eslint/dot-notation': 'error',
+    'dot-notation': 'warn',
+    '@typescript-eslint/dot-notation': 'off',
 
     'init-declarations': 'off',
     '@typescript-eslint/init-declarations': 'warn',
