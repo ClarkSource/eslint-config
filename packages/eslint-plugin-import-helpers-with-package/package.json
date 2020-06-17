@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-plugin-import-helpers-with-package",
-  "version": "1.25.3",
+  "version": "1.25.4",
   "description": "Extends `import-helpers/order-imports` so that it can infer the name of the package the file belongs to",
   "keywords": [
     "eslint",
@@ -35,11 +35,11 @@
     "postpack": "yarn clean &&  yarn patch-main-dev"
   },
   "dependencies": {
-    "@clark/eslint-util-get-package": "^1.25.3",
+    "@clark/eslint-util-get-package": "^1.25.4",
     "eslint-plugin-import-helpers": "^1.0.2"
   },
   "devDependencies": {
-    "@clark/eslint-config-node-typescript": "^1.25.3",
+    "@clark/eslint-config-node-typescript": "^1.25.4",
     "@types/eslint": "^7.2.0",
     "@types/estree": "^0.0.44",
     "eslint": "^7.2.0",
