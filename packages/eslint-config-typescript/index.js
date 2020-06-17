@@ -166,6 +166,8 @@ module.exports = {
       rules: {
         'no-shadow': 'off',
 
+        '@typescript-eslint/init-declarations': 'off',
+
         /**
          * To support scoped packages in `types`, e.g.
          * `types/ember__object.d.ts` which maps to `@ember/object`.
