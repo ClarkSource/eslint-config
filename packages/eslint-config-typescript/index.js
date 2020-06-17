@@ -140,7 +140,7 @@ module.exports = {
       {
         selector: 'enumMember',
         format: ['PascalCase'],
-        leadingUnderscore: 'prohibit'
+        leadingUnderscore: 'forbid'
       },
       {
         selector: 'typeLike',
