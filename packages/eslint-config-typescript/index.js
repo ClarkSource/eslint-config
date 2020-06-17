@@ -154,7 +154,9 @@ module.exports = {
           match: false
         }
       }
-    ]
+    ],
+
+    '@typescript-eslint/array-type': 'error'
   },
   overrides: [
     {
