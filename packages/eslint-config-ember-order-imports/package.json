@@ -33,6 +33,6 @@
     "@clark/eslint-plugin-import-helpers-with-package": "^1.24.4"
   },
   "engines": {
-    "node": "^10.0 || ^12.0 || ^13.0"
+    "node": "^10.0 || ^12.0 || ^13.0 || ^14.0"
   }
 }
