@@ -187,7 +187,8 @@ module.exports = {
          * We don't want to auto-fix names in typings as the source modules they
          * type are not changed.
          */
-        'unicorn/prevent-abbreviations': 'off'
+        'unicorn/prevent-abbreviations': 'off',
+        '@typescript-eslint/naming-convention': 'off'
       }
     },
     {
