@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@clark/eslint-util-get-package": "^1.25.6",
-    "eslint-plugin-import-helpers": "^1.0.2"
+    "eslint-plugin-import-helpers": "^1.1.0"
   },
   "devDependencies": {
     "@clark/eslint-config-node-typescript": "^1.25.6",
