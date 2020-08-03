@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-node-typescript",
-  "version": "1.26.2",
+  "version": "1.26.3",
   "description": "Clark's eslint-config for Node.js using TypeScript",
   "keywords": [
     "eslint",
@@ -28,8 +28,8 @@
     "test": "printf '' | yarn eslint -c ./index.js --stdin"
   },
   "dependencies": {
-    "@clark/eslint-config-node": "^1.26.2",
-    "@clark/eslint-config-typescript": "^1.26.2"
+    "@clark/eslint-config-node": "^1.26.3",
+    "@clark/eslint-config-typescript": "^1.26.3"
   },
   "peerDependencies": {
     "typescript": "^3.3.3"
