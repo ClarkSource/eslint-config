@@ -45,7 +45,7 @@
     "npm": false
   },
   "volta": {
-    "node": "12.16.1"
+    "node": "14.7.0"
   },
   "version": "1.25.6"
 }
