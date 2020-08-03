@@ -181,7 +181,13 @@ module.exports = {
          * To support scoped packages in `types`, e.g.
          * `types/ember__object.d.ts` which maps to `@ember/object`.
          */
-        'unicorn/filename-case': 'off'
+        'unicorn/filename-case': 'off',
+
+        /**
+         * We don't want to auto-fix names in typings as the source modules they
+         * type are not changed.
+         */
+        'unicorn/prevent-abbreviations': 'off'
       }
     },
     {
