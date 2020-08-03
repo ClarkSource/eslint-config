@@ -156,7 +156,14 @@ module.exports = {
       }
     ],
 
-    '@typescript-eslint/array-type': 'error'
+    '@typescript-eslint/array-type': 'error',
+
+    /**
+     * Adds support for numeric separators to the base rule.
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loss-of-precision.md
+     */
+    'no-loss-of-precision': 'off',
+    '@typescript-eslint/no-loss-of-precision': 'error'
   },
   overrides: [
     {
