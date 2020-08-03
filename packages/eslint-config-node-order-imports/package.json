@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-node-order-imports",
-  "version": "1.26.3",
+  "version": "1.26.4",
   "description": "Sorts ES module imports for Node.js projects",
   "keywords": [
     "eslint",
