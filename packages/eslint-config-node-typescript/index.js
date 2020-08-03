@@ -42,6 +42,7 @@ module.exports = {
    * @see https://eslint.org/docs/user-guide/migrating-to-6.0.0#-overrides-in-an-extended-config-file-can-now-be-overridden-by-a-parent-config-file
    */
   overrides: [
+    ...require('@clark/eslint-config-typescript').overrides,
     ...require('@clark/eslint-config-node').overrides,
     {
       files: ['*.d.ts'],
