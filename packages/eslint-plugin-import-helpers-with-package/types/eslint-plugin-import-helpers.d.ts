@@ -43,6 +43,7 @@ declare module 'eslint-plugin-import-helpers' {
   }
 
   interface OrderImportsRuleListener extends Rule.RuleListener {
+    /* eslint-disable @typescript-eslint/naming-convention */
     ImportDeclaration(node: Node): void;
     CallExpression(node: Node): void;
     'Program:exit'(): void;
@@ -56,6 +57,7 @@ declare module 'eslint-plugin-import-helpers' {
     'ArrowFunctionExpression:exit'(): void;
     'BlockStatement:exit'(): void;
     'ObjectExpression:exit'(): void;
+    /* eslint-enable @typescript-eslint/naming-convention */
   }
 
   interface Rules {
