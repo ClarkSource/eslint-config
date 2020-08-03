@@ -20,6 +20,7 @@ jobs:
         run: |
           yarn install --frozen-lockfile --non-interactive
           yarn lint:js
+          yarn lint:types
           yarn lint:rules
           yarn test
         env:

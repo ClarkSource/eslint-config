@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "lint:js": "eslint --ext ts,js .",
+    "lint:types": "lerna run lint:types",
     "lint:rules": "lerna run lint:rules",
     "test": "lerna run test"
   },
