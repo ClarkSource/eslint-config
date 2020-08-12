@@ -31,7 +31,7 @@
     "postpack": "yarn clean &&  yarn patch-main-dev"
   },
   "dependencies": {
-    "find-up": "^4.1.0",
+    "find-up": "^5.0.0",
     "type-fest": "^0.16.0"
   },
   "devDependencies": {
