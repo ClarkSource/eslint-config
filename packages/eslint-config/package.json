@@ -25,6 +25,7 @@
     "test": "printf '' | yarn eslint -c ./index.js --stdin"
   },
   "dependencies": {
+    "@clark/prettier-config": "^1.26.5",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-xo-space": "^0.25.0",

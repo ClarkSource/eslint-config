@@ -1,0 +1,27 @@
+{
+  "name": "@clark/prettier-config",
+  "version": "1.26.5",
+  "description": "Clark's config for Prettier",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/prettier-config",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkSource/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": "^10.0 || ^12.0 || ^13.0 || ^14.0"
+  }
+}
