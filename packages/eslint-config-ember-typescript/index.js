@@ -23,6 +23,28 @@ module.exports = {
    */
   overrides: [
     ...require('@clark/eslint-config-typescript').overrides,
-    ...require('@clark/eslint-config-ember').overrides
+    ...require('@clark/eslint-config-ember').overrides,
+    {
+      /**
+       * The `Application` class has slots for `Resolver` and `Router` base
+       * classes.
+       */
+      files: ['app.{js,ts}'],
+      rules: {
+        '@typescript-eslint/naming-convention': [
+          ...require('@clark/eslint-config-typescript').rules[
+            '@typescript-eslint/naming-convention'
+          ],
+          {
+            selector: 'property',
+            format: ['StrictPascalCase'],
+            filter: {
+              regex: 'Resolver|Router',
+              match: true
+            }
+          }
+        ]
+      }
+    }
   ]
 };
