@@ -1,3 +1,11 @@
+<p align="center">
+  <a href="https://github.com/ClarkSource/eslint-config#readme">
+    <br><br><br><br><br>
+    <img alt="CLARK" src="../../docs/assets/clark.svg" height="40">
+    <br><br><br><br><br>
+  </a>
+</p>
+
 # `@clark/eslint-plugin-import-helpers-with-package`
 
 ![Node CI](https://github.com/ClarkSource/eslint-config/workflows/Node%20CI/badge.svg)
