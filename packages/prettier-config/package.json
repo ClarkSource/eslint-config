@@ -1,6 +1,6 @@
 {
   "name": "@clark/prettier-config",
-  "version": "1.28.0",
+  "version": "1.28.1",
   "description": "CLARK's config for Prettier",
   "keywords": [
     "prettier",
