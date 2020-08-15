@@ -46,8 +46,11 @@ This repo contains all of [CLARK](https://github.com/ClarkSource)'s
   [**`@clark/eslint-config-ember-order-imports`**](/packages/eslint-config-ember-order-imports)\
   Sorts ES module imports for Ember.js projects.
 
-There are also a few more plugins and utils in this repository:
+There are also a few more configs, plugins and utils in this repository:
 
+- <sub>[![npm](https://img.shields.io/npm/v/@clark/prettier-config?label)](https://www.npmjs.com/package/@clark/prettier-config)</sub>
+  [**`@clark/prettier-config`**](/packages/prettier-config)\
+  Our config for [Prettier][prettier]. Used by `eslint-config`.
 - <sub>[![npm](https://img.shields.io/npm/v/@clark/eslint-plugin-import-helpers-with-package?label)](https://www.npmjs.com/package/@clark/eslint-plugin-import-helpers-with-package)</sub>
   [**`@clark/eslint-plugin-import-helpers-with-package`**](/packages/eslint-plugin-import-helpers-with-package)\
   Extends [`eslint-plugin-import-helpers/order-imports`][order-imports] so that
@@ -56,4 +59,5 @@ There are also a few more plugins and utils in this repository:
   [**`@clark/eslint-util-get-package`**](/packages/eslint-util-get-package)\
   Finds the `package.json` a source file belongs to.
 
+[prettier]: https://github.com/prettier/prettier
 [order-imports]: https://github.com/Tibfib/eslint-plugin-import-helpers/blob/master/docs/rules/order-imports.md
