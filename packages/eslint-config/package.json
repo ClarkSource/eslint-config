@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config",
-  "version": "1.27.0",
+  "version": "1.28.0",
   "description": "CLARK's base eslint-config",
   "keywords": [
     "eslint",
@@ -25,7 +25,7 @@
     "test": "printf '' | yarn eslint -c ./index.js --stdin"
   },
   "dependencies": {
-    "@clark/prettier-config": "^1.27.0",
+    "@clark/prettier-config": "^1.28.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-xo-space": "^0.25.0",

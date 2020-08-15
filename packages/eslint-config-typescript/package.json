@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-typescript",
-  "version": "1.27.0",
+  "version": "1.28.0",
   "description": "CLARK's eslint-config for TypeScript",
   "keywords": [
     "eslint",
@@ -27,7 +27,7 @@
     "test": "printf '' | yarn eslint -c ./index.js --stdin"
   },
   "dependencies": {
-    "@clark/eslint-config": "^1.27.0",
+    "@clark/eslint-config": "^1.28.0",
     "@typescript-eslint/eslint-plugin": "^3.9.0",
     "@typescript-eslint/parser": "^3.9.0"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@clark/prettier-config",
-  "version": "1.27.0",
+  "version": "1.28.0",
   "description": "CLARK's config for Prettier",
   "keywords": [
     "prettier",
@@ -20,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
-  "dependencies": {},
   "engines": {
     "node": "^10.0 || ^12.0 || ^13.0 || ^14.0"
   }
