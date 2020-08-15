@@ -1,6 +1,6 @@
 # `@clark/eslint-config-ember`
 
-[![BuildStatus](https://travis-ci.org/ClarkSource/eslint-config.svg)](https://travis-ci.org/ClarkSource/eslint-config)
+![Node CI](https://github.com/ClarkSource/eslint-config/workflows/Node%20CI/badge.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![dependencies](https://david-dm.org/ClarkSource/eslint-config/status.svg?path=packages/eslint-config-node-typescript)](https://david-dm.org/ClarkSource/eslint-config?path=packages/eslint-config-node-typescript)
 [![devDependencies](https://david-dm.org/ClarkSource/eslint-config/dev-status.svg?path=packages/eslint-config-node-typescript)](https://david-dm.org/ClarkSource/eslint-config?path=packages/eslint-config-node-typescript&type=dev)

@@ -1,6 +1,6 @@
 # `@clark/eslint-config-ember-order-imports`
 
-[![BuildStatus](https://travis-ci.org/ClarkSource/eslint-config.svg)](https://travis-ci.org/ClarkSource/eslint-config)
+![Node CI](https://github.com/ClarkSource/eslint-config/workflows/Node%20CI/badge.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![dependencies](https://david-dm.org/ClarkSource/eslint-config/status.svg?path=packages/eslint-config-ember-order-imports)](https://david-dm.org/ClarkSource/eslint-config?path=packages/eslint-config-ember-order-imports)
 [![devDependencies](https://david-dm.org/ClarkSource/eslint-config/dev-status.svg?path=packages/eslint-config-ember-order-imports)](https://david-dm.org/ClarkSource/eslint-config?path=packages/eslint-config-ember-order-imports&type=dev)
@@ -27,10 +27,10 @@ yarn add -D eslint @clark/eslint-config-ember-order-imports
 
 ```js
 module.exports = {
-  extends: ['@clark/ember-order-imports'],
+  extends: ["@clark/ember-order-imports"],
   rules: {
     // your rules here
-  }
+  },
 };
 ```
 

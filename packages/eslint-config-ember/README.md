@@ -1,6 +1,6 @@
 # `@clark/eslint-config-ember`
 
-[![BuildStatus](https://travis-ci.org/ClarkSource/eslint-config.svg)](https://travis-ci.org/ClarkSource/eslint-config)
+![Node CI](https://github.com/ClarkSource/eslint-config/workflows/Node%20CI/badge.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![dependencies](https://david-dm.org/ClarkSource/eslint-config/status.svg?path=packages/eslint-config-ember)](https://david-dm.org/ClarkSource/eslint-config?path=packages/eslint-config-ember)
 [![devDependencies](https://david-dm.org/ClarkSource/eslint-config/dev-status.svg?path=packages/eslint-config-ember)](https://david-dm.org/ClarkSource/eslint-config?path=packages/eslint-config-ember&type=dev)
@@ -93,7 +93,7 @@ configs.
 // .eslintrc.js
 module.exports = {
   root: true,
-  extends: '@clark/node'
+  extends: "@clark/node",
 };
 ```
 
@@ -101,7 +101,7 @@ module.exports = {
 // addon/.eslintrc.js
 module.exports = {
   root: true,
-  extends: '@clark/ember-typescript'
+  extends: "@clark/ember-typescript",
 };
 ```
 
@@ -109,7 +109,7 @@ module.exports = {
 // addon-test-support/.eslintrc.js
 module.exports = {
   root: true,
-  extends: '@clark/ember-typescript'
+  extends: "@clark/ember-typescript",
 };
 ```
 
@@ -119,7 +119,7 @@ module.exports = {
   root: true,
   // Since `app` is merged with the parent app, which is not guaranteed to have
   // TypeScript installed, we need to restrict ourselves to JavaScript only.
-  extends: '@clark/ember'
+  extends: "@clark/ember",
 };
 ```
 
@@ -127,7 +127,7 @@ module.exports = {
 // tests/.eslintrc.js
 module.exports = {
   root: true,
-  extends: '@clark/ember-typescript/test'
+  extends: "@clark/ember-typescript/test",
 };
 ```
 
@@ -135,7 +135,7 @@ module.exports = {
 // tests/dummy/config/.eslintrc.js
 module.exports = {
   root: true,
-  extends: '@clark/node'
+  extends: "@clark/node",
 };
 ```
 
@@ -164,7 +164,7 @@ module.exports = {
 // .eslintrc.js
 module.exports = {
   root: true,
-  extends: '@clark/node'
+  extends: "@clark/node",
 };
 ```
 
@@ -172,7 +172,7 @@ module.exports = {
 // app/.eslintrc.js
 module.exports = {
   root: true,
-  extends: '@clark/ember-typescript'
+  extends: "@clark/ember-typescript",
 };
 ```
 
@@ -180,7 +180,7 @@ module.exports = {
 // tests/.eslintrc.js
 module.exports = {
   root: true,
-  extends: '@clark/ember-typescript/test'
+  extends: "@clark/ember-typescript/test",
 };
 ```
 
@@ -188,6 +188,6 @@ module.exports = {
 // tests/dummy/config/.eslintrc.js
 module.exports = {
   root: true,
-  extends: '@clark/node'
+  extends: "@clark/node",
 };
 ```
