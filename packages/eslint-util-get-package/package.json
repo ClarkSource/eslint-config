@@ -8,7 +8,7 @@
     "package"
   ],
   "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
-  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-util-get-package",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-util-get-package",
   "license": "ISC",
   "main": "index.ts.js",
   "publishConfig": {

@@ -9,7 +9,7 @@
     "frontend"
   ],
   "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
-  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config-browser",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-config-browser",
   "license": "ISC",
   "main": "index.js",
   "publishConfig": {

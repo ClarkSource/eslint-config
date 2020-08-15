@@ -10,7 +10,7 @@
     "typescript"
   ],
   "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
-  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config-node-typescript",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-config-node-typescript",
   "license": "ISC",
   "main": "index.js",
   "publishConfig": {

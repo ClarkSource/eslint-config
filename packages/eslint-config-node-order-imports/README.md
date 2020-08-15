@@ -15,8 +15,8 @@ If you use the [`@clark/eslint-config-node`][eslint-config-node] or
 [`@clark/eslint-config-node-typescript`][eslint-config-node-typescript], you
 don't need to do anything, as they already include this config.
 
-[eslint-config-node]: https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config-node
-[eslint-config-node-typescript]: https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config-node-typescript
+[eslint-config-node]: https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-config-node
+[eslint-config-node-typescript]: https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-config-node-typescript
 
 If you don't like our config and just want to order your imports while using
 your own eslint config, just install this package and add it to `extends`.

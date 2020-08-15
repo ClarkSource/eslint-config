@@ -12,7 +12,7 @@
     "import"
   ],
   "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
-  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-plugin-import-helpers-with-package",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-plugin-import-helpers-with-package",
   "license": "ISC",
   "main": "index.ts.js",
   "publishConfig": {

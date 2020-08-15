@@ -9,7 +9,7 @@
     "node.js"
   ],
   "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
-  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config-node",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-config-node",
   "license": "ISC",
   "main": "index.js",
   "publishConfig": {

@@ -15,8 +15,8 @@ If you use the [`@clark/eslint-config-ember`][eslint-config-ember] or
 [`@clark/eslint-config-ember-typescript`][eslint-config-ember-typescript], you
 don't need to do anything, as they already include this config.
 
-[eslint-config-ember]: https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config-ember
-[eslint-config-ember-typescript]: https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config-ember-typescript
+[eslint-config-ember]: https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-config-ember
+[eslint-config-ember-typescript]: https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-config-ember-typescript
 
 If you don't like our config and just want to order your imports while using
 your own eslint config, just install this package and add it to `extends`.

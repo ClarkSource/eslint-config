@@ -8,7 +8,7 @@
     "base"
   ],
   "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
-  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-config",
   "license": "ISC",
   "main": "index.js",
   "publishConfig": {

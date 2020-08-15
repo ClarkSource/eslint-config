@@ -13,7 +13,7 @@
     "imports"
   ],
   "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
-  "homepage": "https://github.com/ClarkSource/eslint-config/tree/master/packages/eslint-config-ember-order-imports",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-config-ember-order-imports",
   "license": "ISC",
   "main": "index.js",
   "publishConfig": {
