@@ -1,3 +1,11 @@
+<p align="center">
+  <a href="https://www.clark.de/de/jobs">
+    <br><br><br><br><br>
+    <img alt="CLARK" src="./docs/assets/clark.svg" height="40">
+    <br><br><br><br><br>
+  </a>
+</p>
+
 # CLARK's eslint-config
 
 [![Build Status](https://travis-ci.org/ClarkSource/eslint-config.svg)](https://travis-ci.org/ClarkSource/eslint-config)
