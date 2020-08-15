@@ -6,7 +6,7 @@
   </a>
 </p>
 
-# `@clark/eslint-config-ember`
+# `@clark/eslint-config-node`
 
 ![Node CI](https://github.com/ClarkSource/eslint-config/workflows/Node%20CI/badge.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
