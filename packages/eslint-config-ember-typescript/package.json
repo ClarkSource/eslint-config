@@ -1,7 +1,7 @@
 {
   "name": "@clark/eslint-config-ember-typescript",
   "version": "1.26.5",
-  "description": "Clark's eslint-config for Ember.js using TypeScript",
+  "description": "CLARK's eslint-config for Ember.js using TypeScript",
   "keywords": [
     "eslint",
     "eslint-config",

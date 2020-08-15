@@ -1,4 +1,4 @@
-# Clark's eslint-config
+# CLARK's eslint-config
 
 [![Build Status](https://travis-ci.org/ClarkSource/eslint-config.svg)](https://travis-ci.org/ClarkSource/eslint-config)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
@@ -7,7 +7,7 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![CLARK Open Source](https://img.shields.io/badge/CLARK-Open%20Source-%232B6CDE.svg)](https://www.clark.de/de/jobs)
 
-This repo contains all of [Clark](https://github.com/ClarkSource)'s
+This repo contains all of [CLARK](https://github.com/ClarkSource)'s
 [eslint](https://eslint.org/) configuration presets.
 
 - <sub>[![npm](https://img.shields.io/npm/v/@clark/eslint-config?label)](https://www.npmjs.com/package/@clark/eslint-config)</sub>

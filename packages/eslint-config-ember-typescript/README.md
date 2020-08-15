@@ -7,7 +7,7 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![CLARK Open Source](https://img.shields.io/badge/CLARK-Open%20Source-%232B6CDE.svg)](https://www.clark.de/de/jobs)
 
-> Clark's eslint-config for Ember.js using TypeScript
+> CLARK's eslint-config for Ember.js using TypeScript
 
 For installation and setup instructions see
 [`@clark/eslint-config-ember`](/packages/eslint-config-ember).

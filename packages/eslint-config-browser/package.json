@@ -1,7 +1,7 @@
 {
   "name": "@clark/eslint-config-browser",
   "version": "1.26.5",
-  "description": "Clark's eslint-config for browsers",
+  "description": "CLARK's eslint-config for browsers",
   "keywords": [
     "eslint",
     "eslint-config",

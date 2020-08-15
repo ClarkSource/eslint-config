@@ -7,7 +7,7 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![CLARK Open Source](https://img.shields.io/badge/CLARK-Open%20Source-%232B6CDE.svg)](https://www.clark.de/de/jobs)
 
-> Clark's config for Prettier
+> CLARK's config for Prettier
 
 This is the configuration we use for [Prettier][prettier]. We also use it in our
 [base `eslint-config`][eslint-config].
