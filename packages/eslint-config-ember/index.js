@@ -247,9 +247,10 @@ module.exports = {
       /**
        * This override avoids a false positive for `Router.map(...)`.
        */
-      files: ['router.js', 'router.ts'],
+      files: ['router.{js,ts}'],
       rules: {
-        'array-callback-return': 'off'
+        'array-callback-return': 'off',
+        '@typescript-eslint/no-empty-function': 'off'
       }
     }
   ]
