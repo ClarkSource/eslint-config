@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://github.com/ClarkSource/eslint-config#readme">
     <br><br><br><br><br>
-    <img alt="CLARK" src="../../docs/assets/clark.svg" height="40">
+    <img alt="CLARK" src="https://raw.githubusercontent.com/ClarkSource/eslint-config/HEAD/docs/assets/clark.svg" height="40">
     <br><br><br><br><br>
   </a>
 </p>
