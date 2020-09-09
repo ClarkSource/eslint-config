@@ -6092,10 +6092,10 @@ release-it-lerna-changelog@^2.3.0:
     tmp "^0.2.0"
     which "^2.0.2"
 
-release-it-yarn-workspaces@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/release-it-yarn-workspaces/-/release-it-yarn-workspaces-1.4.0.tgz#ebc6723a59592cea5f7d31cb3c11c1757f65a7da"
-  integrity sha512-alXTftlKl3fhm+UKvVaB4urUecZskWe7g7kBdfgWqm5mqQ363gd/3f9sdM5r/KXKJAGE1xH9Us3igTliiG/SxQ==
+release-it-yarn-workspaces@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/release-it-yarn-workspaces/-/release-it-yarn-workspaces-1.5.0.tgz#33e40e5c611999f03809b3316c2e56efc25eeceb"
+  integrity sha512-X8TcRADePg0k5VeAhAEvih45vx1Kbm1ViHJoiMGMpGI5hPvUJ9l4NDHH79HbIJYvzzirPgzAvMTXDrr20pjT9w==
   dependencies:
     detect-indent "^6.0.0"
     detect-newline "^3.1.0"
