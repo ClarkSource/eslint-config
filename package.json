@@ -15,7 +15,7 @@
     "test": "lerna run test"
   },
   "devDependencies": {
-    "eslint": "^7.7.0",
+    "eslint": "^7.10.0",
     "lerna": "^3.22.1",
     "release-it": "^14.0.4",
     "release-it-lerna-changelog": "^2.4.0",
