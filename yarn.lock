@@ -5681,6 +5681,18 @@ path-parse@^1.0.6:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
 
+path-root-regex@^0.1.0:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/path-root-regex/-/path-root-regex-0.1.2.tgz#bfccdc8df5b12dc52c8b43ec38d18d72c04ba96d"
+  integrity sha1-v8zcjfWxLcUsi0PsONGNcsBLqW0=
+
+path-root@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/path-root/-/path-root-0.1.1.tgz#9a4a6814cac1c0cd73360a95f32083c8ea4745b7"
+  integrity sha1-mkpoFMrBwM1zNgqV8yCDyOpHRbc=
+  dependencies:
+    path-root-regex "^0.1.0"
+
 path-type@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
@@ -6116,15 +6128,15 @@ registry-url@^5.0.0:
   dependencies:
     rc "^1.2.8"
 
-release-it-lerna-changelog@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/release-it-lerna-changelog/-/release-it-lerna-changelog-2.4.0.tgz#2751cc1b00989d7095fc8c232a54d75b9240e735"
-  integrity sha512-133XeF9esKAnYuhJQ5nKpQWZYTzkfxVy6YU9NnC0LiiA2jG/4lq9G2D70C3YceWgIAA9uX+Q+1WwWwkY4GY8Uw==
+release-it-lerna-changelog@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/release-it-lerna-changelog/-/release-it-lerna-changelog-3.0.0.tgz#6bbab3cb2417a9230b38c7f30d7a7fe6eae06da2"
+  integrity sha512-TyIV3rVmD7mWYU4WLHf3vlxp3w/Q5N7sDQcqxlkCJ+t1+8t6u7BZ9TR+qLe2cCrcxv2LrdPWRUqTAhgXPqPiYA==
   dependencies:
     execa "^4.0.3"
     lerna-changelog "^1.0.1"
-    release-it "^13.7.0"
     tmp "^0.2.1"
+    validate-peer-dependencies "^1.0.0"
     which "^2.0.2"
 
 release-it-yarn-workspaces@^1.5.0:
@@ -6139,7 +6151,7 @@ release-it-yarn-workspaces@^1.5.0:
     url-join "^4.0.1"
     walk-sync "^2.0.2"
 
-release-it@^13.3.2, release-it@^13.7.0:
+release-it@^13.3.2:
   version "13.7.1"
   resolved "https://registry.yarnpkg.com/release-it/-/release-it-13.7.1.tgz#c23316bb538429c1576f969731df135a6016a32e"
   integrity sha512-OAupGLMZJBGrGRJmb8RvZ8ZQAQquKlkGGYvgRrJmkHE+jnGdf+YSvEmItBv08CwhDcwCyXdTkkN/rJ2Flt68+g==
@@ -6299,6 +6311,14 @@ resolve-from@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
   integrity sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
+
+resolve-package-path@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/resolve-package-path/-/resolve-package-path-3.1.0.tgz#35faaa5d54a9c7dd481eb7c4b2a44410c9c763d8"
+  integrity sha512-2oC2EjWbMJwvSN6Z7DbDfJMnD8MYEouaLn5eIX0j8XwPsYCVIyY9bbnX88YHVkbr8XHqvZrYbxaLPibfTYKZMA==
+  dependencies:
+    path-root "^0.1.1"
+    resolve "^1.17.0"
 
 resolve-url@^0.2.1:
   version "0.2.1"
@@ -7394,6 +7414,14 @@ validate-npm-package-name@^3.0.0:
   integrity sha1-X6kS2B630MdK/BQN5zF/DKffQ34=
   dependencies:
     builtins "^1.0.3"
+
+validate-peer-dependencies@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/validate-peer-dependencies/-/validate-peer-dependencies-1.1.0.tgz#8240a115df121ea35b0bb082255b38b5c591d7e1"
+  integrity sha512-eHHxI3fNMqu8bzWPRWWgV72kBJkWwRCeEua7yC7UI6dsqC55orhxKAC3uyQfCjjToOyAZ8mpNrbQH+NMoYBn1w==
+  dependencies:
+    resolve-package-path "^3.1.0"
+    semver "^7.3.2"
 
 verror@1.10.0:
   version "1.10.0"
