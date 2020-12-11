@@ -31,7 +31,7 @@
     "@clark/eslint-config-ember-order-imports": "^1.28.2",
     "eslint-plugin-ember": "^9.6.0",
     "eslint-plugin-ember-best-practices": "^1.1.2",
-    "eslint-plugin-qunit": "^5.1.0",
+    "eslint-plugin-qunit": "^5.1.1",
     "lodash.merge": "^4.6.2"
   },
   "engines": {
