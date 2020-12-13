@@ -101,7 +101,7 @@ module.exports = {
     'consistent-return': 'off',
 
     'unicorn/prevent-abbreviations': [
-      'warn',
+      'off',
       {
         replacements: {
           args: {
