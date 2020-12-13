@@ -5,7 +5,6 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   extends: [
     '@clark',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint'
   ],
@@ -78,6 +77,18 @@ module.exports = {
 
     'no-dupe-class-members': 'off',
     '@typescript-eslint/no-dupe-class-members': 'error',
+
+    'no-duplicate-imports': 'off',
+    '@typescript-eslint/no-duplicate-imports': 'error',
+
+    'no-loop-func': 'off',
+    '@typescript-eslint/no-loop-func': 'error',
+
+    'no-redeclare': 'off',
+    '@typescript-eslint/no-redeclare': 'error',
+
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
 
     /**
      * @note Requires parser services and is thus disabled.
