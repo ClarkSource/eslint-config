@@ -32,7 +32,7 @@
     "@clark/eslint-config-typescript": "^1.28.2"
   },
   "peerDependencies": {
-    "typescript": "^3.3.3"
+    "typescript": "^3.3.3 || ^4.0.0"
   },
   "engines": {
     "node": "^10.0 || ^12.0 || ^13.0 || >=14.0"
