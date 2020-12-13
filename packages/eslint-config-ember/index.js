@@ -190,15 +190,15 @@ module.exports = {
 
     /**
      * Disables `ember-best-practices/no-broken-super-chain` in favor of just
-     * `ember/require-super-in-init`, which is the same, but slightly more
-     * sophisticated.
+     * `ember/require-super-in-lifecycle-hooks`, which is the same, but slightly
+     * more sophisticated.
      *
      * @see https://github.com/ember-best-practices/eslint-plugin-ember-best-practices/blob/master/lib/rules/no-broken-super-chain.js
-     * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/lib/rules/require-super-in-init.js
-     * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/require-super-in-init.md
+     * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/lib/rules/require-super-in-lifecycle-hooks.js
+     * @see https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/require-super-in-lifecycle-hooks.md
      */
     'ember-best-practices/no-broken-super-chain': 'off',
-    'ember/require-super-in-init': 'error',
+    'ember/require-super-in-lifecycle-hooks': 'error',
 
     /**
      * Disables `ember-best-practices/no-global-jquery` in favor of just
