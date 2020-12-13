@@ -1,11 +1,12 @@
-import { join } from 'path';
+import path from 'path';
 
 import { sync as findUpSync } from 'find-up';
 import type { PackageJson } from 'type-fest';
 
 import { findUpWithCache } from './find-up-with-cache';
 
-const getPackagePath = (directory: string) => join(directory, 'package.json');
+const getPackagePath = (directory: string) =>
+  path.join(directory, 'package.json');
 
 const matchPackage = (directory: string) => {
   const packagePath = getPackagePath(directory);
