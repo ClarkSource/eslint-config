@@ -28,7 +28,7 @@
     "@clark/prettier-config": "^2.0.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^7.1.0",
-    "eslint-config-xo-space": "^0.25.0",
+    "eslint-config-xo-space": "^0.26.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.0",
