@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^0.3.0",
-    "eslint": "^7.17.0",
+    "eslint": "^7.18.0",
     "lerna": "^3.22.1",
     "release-it": "^14.2.2",
     "release-it-lerna-changelog": "^3.1.0",
