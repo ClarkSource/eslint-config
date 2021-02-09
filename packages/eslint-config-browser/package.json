@@ -1,6 +1,6 @@
 {
   "name": "@clark/eslint-config-browser",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "CLARK's eslint-config for browsers",
   "keywords": [
     "eslint",
@@ -26,7 +26,7 @@
     "test": "printf '' | yarn eslint -c ./index.js --stdin"
   },
   "dependencies": {
-    "@clark/eslint-config": "^2.0.0"
+    "@clark/eslint-config": "^2.1.0"
   },
   "engines": {
     "node": "^10.0 || ^12.0 || ^13.0 || >=14.0"
