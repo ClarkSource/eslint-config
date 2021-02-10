@@ -32,7 +32,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-unicorn": "^24.0.0",
+    "eslint-plugin-unicorn": "^28.0.0",
     "prettier": "^2.2.1"
   },
   "engines": {
