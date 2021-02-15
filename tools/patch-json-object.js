@@ -8,5 +8,5 @@ const resolvedFilePath = path.resolve(filePath);
 const jsonPatch = JSON.parse(jsonPatchString);
 
 const input = JSON.parse(readFileSync(resolvedFilePath));
-const output = JSON.stringify({ ...input, ...jsonPatch }, null, 2);
+const output = JSON.stringify({ ...input, ...jsonPatch }, undefined, 2);
 writeFileSync(resolvedFilePath, output);

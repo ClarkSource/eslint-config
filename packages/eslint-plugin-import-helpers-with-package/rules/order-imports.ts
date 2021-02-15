@@ -1,4 +1,4 @@
-/* eslint-disable no-param-reassign */
+/* eslint-disable unicorn/no-array-for-each, no-param-reassign */
 
 import getPackage from '@clark/eslint-util-get-package';
 // eslint-disable-next-line node/no-unpublished-import

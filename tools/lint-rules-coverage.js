@@ -37,7 +37,7 @@ const filterAdditiveRules = predicate =>
   );
 
 const isAdditiveRulesEmpty = rules =>
-  Object.values(rules).every(v => !v || !v.length);
+  Object.values(rules).every(v => !v || v.length === 0);
 
 const missingOverrides = filterAdditiveRules(
   (name, scopedNamed) =>

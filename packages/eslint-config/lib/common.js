@@ -43,9 +43,9 @@ module.exports = {
     'unicorn/consistent-function-scoping': 'warn',
 
     /**
-     * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-reduce.md
+     * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-array-reduce.md
      */
-    'unicorn/no-reduce': 'warn',
+    'unicorn/no-array-reduce': 'warn',
 
     /**
      * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-useless-undefined.md
