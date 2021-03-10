@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "find-up": "^5.0.0",
-    "type-fest": "^0.21.2"
+    "type-fest": "^0.21.3"
   },
   "devDependencies": {
     "@clark/eslint-config-node-typescript": "^2.2.0",
