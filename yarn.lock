@@ -2586,10 +2586,10 @@ eslint-plugin-prettier@^3.3.1:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-qunit@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-qunit/-/eslint-plugin-qunit-5.3.0.tgz#062ae47f3daee5563b9086edfe66f30f4b444f92"
-  integrity sha512-SeN55paT/BkFvNmi+CSnoCymisEJbmDYvPoBbVlRGsL3ara0P6fnGYRxjIhF6cK37CTZf/8vD5lrVxS3mb0LzA==
+eslint-plugin-qunit@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-qunit/-/eslint-plugin-qunit-5.4.0.tgz#0a6412b8789e72710c74db87f156c8a033e03c54"
+  integrity sha512-vdqMW+YfZOH9AW7U1xc82UwKAdz2xlyuh0Hl+kTXj1E8JPy1B6K+/SBIqRNJUFyuPXHwzKb5Q/kr9i/sU7oMZA==
   dependencies:
     eslint-utils "^2.1.0"
     requireindex "^1.2.0"
