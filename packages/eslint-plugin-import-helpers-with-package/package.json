@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@clark/eslint-config-node-typescript": "^2.2.0",
-    "@types/eslint": "^7.2.10",
+    "@types/eslint": "^7.2.11",
     "@types/estree": "^0.0.47",
     "eslint": "^7.26.0",
     "ts-node": "^9.1.1",
