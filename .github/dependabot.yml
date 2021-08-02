@@ -8,32 +8,3 @@ updates:
     timezone: Europe/Berlin
   open-pull-requests-limit: 99
   versioning-strategy: increase
-  ignore:
-  - dependency-name: eslint-plugin-ember
-    versions:
-    - 10.4.0
-  - dependency-name: eslint-config-prettier
-    versions:
-    - 8.0.0
-    - 8.1.0
-    - 8.2.0
-  - dependency-name: eslint-plugin-qunit
-    versions:
-    - 6.0.0
-  - dependency-name: "@typescript-eslint/eslint-plugin"
-    versions:
-    - 4.16.0
-  - dependency-name: eslint-plugin-unicorn
-    versions:
-    - 27.0.0
-    - 28.0.0
-    - 28.0.1
-  - dependency-name: type-fest
-    versions:
-    - 0.21.0
-  - dependency-name: typescript
-    versions:
-    - 4.1.4
-  - dependency-name: "@types/eslint"
-    versions:
-    - 7.2.6
