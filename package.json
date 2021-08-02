@@ -29,6 +29,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
+  "prettier": "@clark/prettier-config",
   "release-it": {
     "plugins": {
       "release-it-lerna-changelog": {
