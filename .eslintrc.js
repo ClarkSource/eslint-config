@@ -1,3 +1,3 @@
 module.exports = {
-  extends: require.resolve('./eslint/configs/node')
+  extends: ['@clark/eslint-config-node']
 };

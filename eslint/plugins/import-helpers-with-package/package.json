@@ -40,7 +40,7 @@
     "eslint-plugin-import-helpers": "^1.1.0"
   },
   "devDependencies": {
-    "@clark/eslint-config-node-typescript": "^2.2.0",
+    "@clark/eslint-config-node-typescript": "workspace:*",
     "@clark/tools": "workspace:*",
     "@types/eslint": "^7.2.14",
     "@types/estree": "^0.0.50",

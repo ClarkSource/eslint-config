@@ -4,10 +4,12 @@ importers:
 
   .:
     specifiers:
+      '@clark/eslint-config-node': workspace:*
       '@clark/prettier-config': workspace:*
       eslint: ^7.32.0
       typescript: ^4.3.5
     devDependencies:
+      '@clark/eslint-config-node': link:eslint/configs/node
       '@clark/prettier-config': link:prettier/config
       eslint: 7.32.0
       typescript: 4.3.5
@@ -124,7 +126,7 @@ importers:
 
   eslint/plugins/import-helpers-with-package:
     specifiers:
-      '@clark/eslint-config-node-typescript': ^2.2.0
+      '@clark/eslint-config-node-typescript': workspace:*
       '@clark/eslint-util-get-package': ^2.2.0
       '@clark/tools': workspace:*
       '@types/eslint': ^7.2.14
@@ -149,7 +151,7 @@ importers:
 
   eslint/utils/get-package:
     specifiers:
-      '@clark/eslint-config-node-typescript': ^2.2.0
+      '@clark/eslint-config-node-typescript': workspace:*
       '@clark/tools': workspace:*
       eslint: ^7.32.0
       find-up: ^5.0.0
