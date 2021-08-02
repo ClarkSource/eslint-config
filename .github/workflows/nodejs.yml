@@ -8,20 +8,22 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: ['10', '12', '14']
+
+    name: Node.js v${{ matrix.node-version }}
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@bcad811784fb09d282bb1a9a98dfc18f758fbd9e
+        with:
+          version: 6.10.3
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: yarn install, yarn test
-        run: |
-          yarn install --frozen-lockfile --non-interactive
-          yarn lint:js
-          yarn lint:types
-          yarn lint:rules
-          yarn test
-        env:
-          CI: true
+          cache: pnpm
+      - run: pnpm install --prefer-offline --frozen-lockfile
+      - run: pnpm lint:js
+      - run: pnpm lint:types
+      - run: pnpm lint:rules
+      - run: pnpm test
