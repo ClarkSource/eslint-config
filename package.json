@@ -5,9 +5,6 @@
     "type": "git",
     "url": "git@github.com:ClarkSource/eslint-config.git"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "preinstall": "if [ \"$npm_config_user_agent\" = \"${npm_config_user_agent#*\"pnpm/\"}\" -a -x \"$(command -v npx)\" ]; then npx --quiet only-allow pnpm; fi",
     "clean": "pnpm recursive exec rm -rf ./node_modules",
