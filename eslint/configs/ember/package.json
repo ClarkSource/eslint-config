@@ -1,0 +1,43 @@
+{
+  "name": "@clark/eslint-config-ember",
+  "version": "2.2.0",
+  "description": "CLARK's eslint-config for Ember.js",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "ember",
+    "ember.js"
+  ],
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/eslint/configs/ember",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkSource/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
+  },
+  "scripts": {
+    "test": "printf '' | eslint -c ./index.js --stdin && printf '' | eslint -c ./test.js --stdin"
+  },
+  "dependencies": {
+    "@clark/eslint-config": "^2.2.0",
+    "@clark/eslint-config-browser": "^2.2.0",
+    "@clark/eslint-config-ember-order-imports": "^2.2.0",
+    "eslint-plugin-ember": "^10.5.1",
+    "eslint-plugin-ember-best-practices": "^1.1.2",
+    "eslint-plugin-qunit": "^5.4.0",
+    "lodash.merge": "^4.6.2"
+  },
+  "devDependencies": {
+    "@clark/eslint-plugin-import-helpers-with-package": "workspace:*"
+  },
+  "engines": {
+    "node": "^12.20 || >=14.13"
+  }
+}

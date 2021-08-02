@@ -1,0 +1,37 @@
+{
+  "name": "@clark/eslint-config-node",
+  "version": "2.2.0",
+  "description": "CLARK's eslint-config for Node.js",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "node",
+    "node.js"
+  ],
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/eslint/configs/node",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkSource/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
+  },
+  "scripts": {
+    "test": "printf '' | eslint -c ./index.js --stdin"
+  },
+  "dependencies": {
+    "@clark/eslint-config": "^2.2.0",
+    "@clark/eslint-config-node-order-imports": "^2.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "lodash.merge": "^4.6.2"
+  },
+  "engines": {
+    "node": "^12.20 || >=14.13"
+  }
+}

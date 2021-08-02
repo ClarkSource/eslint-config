@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
-  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/packages/eslint-config",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/eslint/configs/base",
   "license": "ISC",
   "bin": {
     "lint-rules-coverage": "./lint-rules-coverage.js",
