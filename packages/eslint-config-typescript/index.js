@@ -53,8 +53,10 @@ module.exports = {
     '@typescript-eslint/no-invalid-this': 'error',
 
     'lines-between-class-members': 'off',
-    '@typescript-eslint/lines-between-class-members': require('@clark/eslint-config/lib/common')
-      .rules['lines-between-class-members'],
+    '@typescript-eslint/lines-between-class-members':
+      require('@clark/eslint-config/lib/common').rules[
+        'lines-between-class-members'
+      ],
 
     /**
      * This allows short-circuit idioms, like:
@@ -69,8 +71,8 @@ module.exports = {
      * properly support optional chaining.
      */
     'no-unused-expressions': 'off',
-    '@typescript-eslint/no-unused-expressions': require('@clark/eslint-config/lib/common')
-      .rules['no-unused-expressions'],
+    '@typescript-eslint/no-unused-expressions':
+      require('@clark/eslint-config/lib/common').rules['no-unused-expressions'],
 
     'default-param-last': 'off',
     '@typescript-eslint/default-param-last': 'error',

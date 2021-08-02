@@ -5,49 +5,27 @@
     "type": "git",
     "url": "git@github.com:ClarkSource/eslint-config.git"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
+    "preinstall": "if [ \"$npm_config_user_agent\" = \"${npm_config_user_agent#*\"pnpm/\"}\" -a -x \"$(command -v npx)\" ]; then npx --quiet only-allow pnpm; fi",
+    "clean": "pnpm --recursive exec rm -rf ./node_modules",
     "lint:js": "eslint --ext ts,js .",
-    "lint:types": "lerna run lint:types",
-    "lint:rules": "lerna run lint:rules",
-    "test": "lerna run test"
+    "lint:types": "pnpm --recursive --stream --no-bail run lint:types",
+    "lint:rules": "pnpm --recursive --stream --no-bail run lint:rules",
+    "test": "pnpm --recursive --stream --no-bail run test"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^0.4.3",
+    "@clark/prettier-config": "workspace:*",
     "eslint": "^7.32.0",
-    "lerna": "^4.0.0",
-    "release-it": "^14.10.1",
-    "release-it-lerna-changelog": "^3.1.0",
-    "release-it-yarn-workspaces": "^2.0.1",
     "typescript": "^4.3.5"
   },
   "engines": {
-    "node": "^10.0 || ^12.0 || ^13.0 || >=14.0"
+    "node": "^12.20 || >=14.13"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "release-it": {
-    "plugins": {
-      "release-it-lerna-changelog": {
-        "infile": "CHANGELOG.md",
-        "launchEditor": false
-      },
-      "release-it-yarn-workspaces": true
-    },
-    "git": {
-      "tagName": "v${version}"
-    },
-    "github": {
-      "release": true,
-      "tokenRef": "GITHUB_AUTH"
-    },
-    "npm": false
-  },
+  "prettier": "@clark/prettier-config",
   "volta": {
-    "node": "14.7.0"
-  },
-  "version": "1.27.0"
+    "node": "14.17.4"
+  }
 }
