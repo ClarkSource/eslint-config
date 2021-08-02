@@ -10,17 +10,13 @@
   ],
   "scripts": {
     "lint:js": "eslint --ext ts,js .",
-    "lint:types": "lerna run lint:types",
-    "lint:rules": "lerna run lint:rules",
-    "test": "lerna run test"
+    "lint:types": "yarn workspaces run lint:types",
+    "lint:rules": "yarn workspaces run lint:rules",
+    "test": "yarn workspaces run test"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^0.4.3",
     "eslint": "^7.32.0",
-    "lerna": "^4.0.0",
-    "release-it": "^14.10.1",
-    "release-it-lerna-changelog": "^3.1.0",
-    "release-it-yarn-workspaces": "^2.0.1",
     "typescript": "^4.3.5"
   },
   "engines": {
@@ -30,23 +26,6 @@
     "registry": "https://registry.npmjs.org"
   },
   "prettier": "@clark/prettier-config",
-  "release-it": {
-    "plugins": {
-      "release-it-lerna-changelog": {
-        "infile": "CHANGELOG.md",
-        "launchEditor": false
-      },
-      "release-it-yarn-workspaces": true
-    },
-    "git": {
-      "tagName": "v${version}"
-    },
-    "github": {
-      "release": true,
-      "tokenRef": "GITHUB_AUTH"
-    },
-    "npm": false
-  },
   "volta": {
     "node": "14.7.0"
   },
