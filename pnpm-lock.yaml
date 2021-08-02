@@ -8,11 +8,11 @@ importers:
       eslint: ^7.32.0
       typescript: ^4.3.5
     devDependencies:
-      '@clark/prettier-config': link:packages/prettier-config
+      '@clark/prettier-config': link:prettier/config
       eslint: 7.32.0
       typescript: 4.3.5
 
-  packages/eslint-config:
+  eslint/configs/base:
     specifiers:
       '@clark/prettier-config': ^2.2.0
       eslint-config-airbnb-base: ^14.2.1
@@ -24,7 +24,7 @@ importers:
       eslint-plugin-unicorn: ^30.0.0
       prettier: ^2.2.1
     dependencies:
-      '@clark/prettier-config': link:../prettier-config
+      '@clark/prettier-config': link:../../../prettier/config
       eslint-config-airbnb-base: 14.2.1_ee2ddb12623c985c36290f985ad5559c
       eslint-config-prettier: 7.2.0_eslint@7.32.0
       eslint-config-xo-space: 0.27.0_eslint@7.32.0
@@ -34,13 +34,13 @@ importers:
       eslint-plugin-unicorn: 30.0.0_eslint@7.32.0
       prettier: 2.3.2
 
-  packages/eslint-config-browser:
+  eslint/configs/browser:
     specifiers:
       '@clark/eslint-config': ^2.2.0
     dependencies:
-      '@clark/eslint-config': link:../eslint-config
+      '@clark/eslint-config': link:../base
 
-  packages/eslint-config-ember:
+  eslint/configs/ember:
     specifiers:
       '@clark/eslint-config': ^2.2.0
       '@clark/eslint-config-browser': ^2.2.0
@@ -51,78 +51,78 @@ importers:
       eslint-plugin-qunit: ^5.4.0
       lodash.merge: ^4.6.2
     dependencies:
-      '@clark/eslint-config': link:../eslint-config
-      '@clark/eslint-config-browser': link:../eslint-config-browser
-      '@clark/eslint-config-ember-order-imports': link:../eslint-config-ember-order-imports
+      '@clark/eslint-config': link:../base
+      '@clark/eslint-config-browser': link:../browser
+      '@clark/eslint-config-ember-order-imports': link:../ember-order-imports
       eslint-plugin-ember: 10.5.1_eslint@7.32.0
       eslint-plugin-ember-best-practices: 1.1.2
       eslint-plugin-qunit: 5.4.0
       lodash.merge: 4.6.2
     devDependencies:
-      '@clark/eslint-plugin-import-helpers-with-package': link:../eslint-plugin-import-helpers-with-package
+      '@clark/eslint-plugin-import-helpers-with-package': link:../../plugins/import-helpers-with-package
 
-  packages/eslint-config-ember-order-imports:
+  eslint/configs/ember-order-imports:
     specifiers:
       '@clark/eslint-plugin-import-helpers-with-package': ^2.2.0
     dependencies:
-      '@clark/eslint-plugin-import-helpers-with-package': link:../eslint-plugin-import-helpers-with-package
+      '@clark/eslint-plugin-import-helpers-with-package': link:../../plugins/import-helpers-with-package
 
-  packages/eslint-config-ember-typescript:
+  eslint/configs/ember-typescript:
     specifiers:
       '@clark/eslint-config-ember': ^2.2.0
       '@clark/eslint-config-typescript': ^2.2.0
       '@clark/eslint-plugin-import-helpers-with-package': workspace:*
       '@clark/tools': workspace:*
     dependencies:
-      '@clark/eslint-config-ember': link:../eslint-config-ember
-      '@clark/eslint-config-typescript': link:../eslint-config-typescript
+      '@clark/eslint-config-ember': link:../ember
+      '@clark/eslint-config-typescript': link:../typescript
     devDependencies:
-      '@clark/eslint-plugin-import-helpers-with-package': link:../eslint-plugin-import-helpers-with-package
-      '@clark/tools': link:../../tools
+      '@clark/eslint-plugin-import-helpers-with-package': link:../../plugins/import-helpers-with-package
+      '@clark/tools': link:../../../tools
 
-  packages/eslint-config-node:
+  eslint/configs/node:
     specifiers:
       '@clark/eslint-config': ^2.2.0
       '@clark/eslint-config-node-order-imports': ^2.0.0
       eslint-plugin-node: ^11.1.0
       lodash.merge: ^4.6.2
     dependencies:
-      '@clark/eslint-config': link:../eslint-config
-      '@clark/eslint-config-node-order-imports': link:../eslint-config-node-order-imports
+      '@clark/eslint-config': link:../base
+      '@clark/eslint-config-node-order-imports': link:../node-order-imports
       eslint-plugin-node: 11.1.0_eslint@7.32.0
       lodash.merge: 4.6.2
 
-  packages/eslint-config-node-order-imports:
+  eslint/configs/node-order-imports:
     specifiers:
       eslint-plugin-import-helpers: ^1.1.0
     dependencies:
       eslint-plugin-import-helpers: 1.1.0_eslint@7.32.0
 
-  packages/eslint-config-node-typescript:
+  eslint/configs/node-typescript:
     specifiers:
       '@clark/eslint-config-node': ^2.2.0
       '@clark/eslint-config-typescript': ^2.2.0
       '@clark/tools': workspace:*
     dependencies:
-      '@clark/eslint-config-node': link:../eslint-config-node
-      '@clark/eslint-config-typescript': link:../eslint-config-typescript
+      '@clark/eslint-config-node': link:../node
+      '@clark/eslint-config-typescript': link:../typescript
     devDependencies:
-      '@clark/tools': link:../../tools
+      '@clark/tools': link:../../../tools
 
-  packages/eslint-config-typescript:
+  eslint/configs/typescript:
     specifiers:
       '@clark/eslint-config': ^2.2.0
       '@clark/tools': workspace:*
       '@typescript-eslint/eslint-plugin': ^4.29.0
       '@typescript-eslint/parser': ^4.29.0
     dependencies:
-      '@clark/eslint-config': link:../eslint-config
+      '@clark/eslint-config': link:../base
       '@typescript-eslint/eslint-plugin': 4.29.0_48ea228fa0647506aa803d17f48b59f7
       '@typescript-eslint/parser': 4.29.0_eslint@7.32.0+typescript@4.3.5
     devDependencies:
-      '@clark/tools': link:../../tools
+      '@clark/tools': link:../../../tools
 
-  packages/eslint-plugin-import-helpers-with-package:
+  eslint/plugins/import-helpers-with-package:
     specifiers:
       '@clark/eslint-config-node-typescript': ^2.2.0
       '@clark/eslint-util-get-package': ^2.2.0
@@ -135,11 +135,11 @@ importers:
       ts-node: ^9.1.1
       typescript: ^4.3.5
     dependencies:
-      '@clark/eslint-util-get-package': link:../eslint-util-get-package
+      '@clark/eslint-util-get-package': link:../../utils/get-package
       eslint-plugin-import-helpers: 1.1.0_eslint@7.32.0
     devDependencies:
-      '@clark/eslint-config-node-typescript': link:../eslint-config-node-typescript
-      '@clark/tools': link:../../tools
+      '@clark/eslint-config-node-typescript': link:../../configs/node-typescript
+      '@clark/tools': link:../../../tools
       '@types/eslint': 7.28.0
       '@types/estree': 0.0.50
       '@types/node': 16.4.10
@@ -147,7 +147,7 @@ importers:
       ts-node: 9.1.1_typescript@4.3.5
       typescript: 4.3.5
 
-  packages/eslint-util-get-package:
+  eslint/utils/get-package:
     specifiers:
       '@clark/eslint-config-node-typescript': ^2.2.0
       '@clark/tools': workspace:*
@@ -160,13 +160,13 @@ importers:
       find-up: 5.0.0
       type-fest: 1.3.0
     devDependencies:
-      '@clark/eslint-config-node-typescript': link:../eslint-config-node-typescript
-      '@clark/tools': link:../../tools
+      '@clark/eslint-config-node-typescript': link:../../configs/node-typescript
+      '@clark/tools': link:../../../tools
       eslint: 7.32.0
       ts-node: 9.1.1_typescript@4.3.5
       typescript: 4.3.5
 
-  packages/prettier-config:
+  prettier/config:
     specifiers: {}
 
   tools:

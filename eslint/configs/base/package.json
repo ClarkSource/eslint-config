@@ -1,0 +1,41 @@
+{
+  "name": "@clark/eslint-config",
+  "version": "2.2.0",
+  "description": "CLARK's base eslint-config",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "base"
+  ],
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/eslint/configs/base",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkSource/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
+  },
+  "scripts": {
+    "test": "printf '' | eslint -c ./index.js --stdin"
+  },
+  "dependencies": {
+    "@clark/prettier-config": "^2.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-xo-space": "^0.27.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-unicorn": "^30.0.0",
+    "prettier": "^2.2.1"
+  },
+  "engines": {
+    "node": "^12.20 || >=14.13"
+  }
+}
