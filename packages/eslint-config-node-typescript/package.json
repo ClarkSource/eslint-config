@@ -24,7 +24,7 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "scripts": {
-    "lint:rules": "../../tools/lint-rules-coverage.js ./index.js @typescript-eslint",
+    "lint:rules": "lint-rules-coverage ./index.js @typescript-eslint",
     "test": "printf '' | eslint -c ./index.js --stdin"
   },
   "dependencies": {
@@ -33,6 +33,9 @@
   },
   "peerDependencies": {
     "typescript": "^3.3.3 || ^4.0.0"
+  },
+  "devDependencies": {
+    "@clark/tools": "workspace:*"
   },
   "engines": {
     "node": "^10.0 || ^12.0 || ^13.0 || >=14.0"

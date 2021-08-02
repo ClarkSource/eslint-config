@@ -34,6 +34,9 @@
     "eslint-plugin-qunit": "^5.4.0",
     "lodash.merge": "^4.6.2"
   },
+  "devDependencies": {
+    "@clark/eslint-plugin-import-helpers-with-package": "workspace:*"
+  },
   "engines": {
     "node": "^10.0 || ^12.0 || ^13.0 || >=14.0"
   }
