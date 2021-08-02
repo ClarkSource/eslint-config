@@ -2,5 +2,6 @@
 
 module.exports = {
   ...require('.'),
-  trailingComma: 'all'
+  arrowParens: 'avoid',
+  trailingComma: 'none'
 };
