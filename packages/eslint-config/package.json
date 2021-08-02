@@ -22,7 +22,7 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "scripts": {
-    "test": "printf '' | yarn eslint -c ./index.js --stdin"
+    "test": "printf '' | eslint -c ./index.js --stdin"
   },
   "dependencies": {
     "@clark/prettier-config": "^2.2.0",

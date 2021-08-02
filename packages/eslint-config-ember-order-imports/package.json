@@ -27,7 +27,7 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "scripts": {
-    "test": "printf '' | yarn eslint -c ./index.js --stdin"
+    "test": "printf '' | eslint -c ./index.js --stdin"
   },
   "dependencies": {
     "@clark/eslint-plugin-import-helpers-with-package": "^2.2.0"

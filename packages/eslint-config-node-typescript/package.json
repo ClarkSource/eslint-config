@@ -25,7 +25,7 @@
   },
   "scripts": {
     "lint:rules": "../../tools/lint-rules-coverage.js ./index.js @typescript-eslint",
-    "test": "printf '' | yarn eslint -c ./index.js --stdin"
+    "test": "printf '' | eslint -c ./index.js --stdin"
   },
   "dependencies": {
     "@clark/eslint-config-node": "^2.2.0",

@@ -12,9 +12,9 @@
     "preinstall": "if [ \"$npm_config_user_agent\" = \"${npm_config_user_agent#*\"pnpm/\"}\" -a -x \"$(command -v npx)\" ]; then npx --quiet only-allow pnpm; fi",
     "clean": "pnpm recursive exec rm -rf ./node_modules",
     "lint:js": "eslint --ext ts,js .",
-    "lint:types": "yarn workspaces run lint:types",
-    "lint:rules": "yarn workspaces run lint:rules",
-    "test": "yarn workspaces run test"
+    "lint:types": "pnpm run --recursive --stream --no-bail lint:types",
+    "lint:rules": "pnpm run --recursive --stream --no-bail lint:rules",
+    "test": "pnpm run --recursive --stream --no-bail test"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^0.4.3",

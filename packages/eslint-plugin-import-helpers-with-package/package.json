@@ -32,8 +32,8 @@
     "clean": "tsc --build --clean",
     "patch-main-prod": "../../tools/patch-json-object.js package.json '{ \"main\": \"index.js\" }'",
     "patch-main-dev": "../../tools/patch-json-object.js package.json '{ \"main\": \"index.ts.js\" }'",
-    "prepack": "yarn build  && yarn patch-main-prod",
-    "postpack": "yarn clean &&  yarn patch-main-dev"
+    "prepack": "pnpm build  && pnpm patch-main-prod",
+    "postpack": "pnpm clean && pnpm patch-main-dev"
   },
   "dependencies": {
     "@clark/eslint-util-get-package": "^2.2.0",
