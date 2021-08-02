@@ -28,6 +28,5 @@
   "prettier": "@clark/prettier-config",
   "volta": {
     "node": "14.17.4"
-  },
-  "version": "1.27.0"
+  }
 }
