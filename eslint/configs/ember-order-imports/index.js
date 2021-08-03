@@ -17,20 +17,26 @@ module.exports = {
         groups: [
           // Testing modules
           [
+            '/^ember-cli-htmlbars($|\\/)/',
             '/^qunit/',
             '/^ember-qunit/',
             '/^@ember/test-helpers/',
             '/^ember-exam/',
+            '/^ember-cli-mirage/',
+            '/^sinon/',
+            '/^ember-sinon-qunit/',
+            '/^(@[^\\/]+\\/)?[^\\/]+\\/test-support($|\\/)/',
           ],
           // Ember.js modules
           [
             '/^ember$/',
-            '/^@ember/',
-            '/^ember-data/',
-            '/^@glimmer/',
+            '/^@ember\\//',
+            '/^ember-data($|\\/)/',
+            '/^@ember-data\\//',
+            '/^@glimmer\\//',
             '/^require$/',
           ],
-          ['/^ember-/'],
+          ['/^@?ember-/', '/^@[^\\/]+\\/ember($|\\/|-)/'],
           ['module'],
           ['absolute'],
           ['package', `/^dummy\\//`],
