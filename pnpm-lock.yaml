@@ -16,6 +16,7 @@ importers:
 
   eslint/configs/base:
     specifiers:
+      '@babel/eslint-parser': ^7.14.9
       '@clark/prettier-config': ^2.2.0
       eslint-config-airbnb-base: ^14.2.1
       eslint-config-prettier: ^8.3.0
@@ -26,6 +27,7 @@ importers:
       eslint-plugin-unicorn: ^30.0.0
       prettier: ^2.3.2
     dependencies:
+      '@babel/eslint-parser': 7.14.9_eslint@7.32.0
       '@clark/prettier-config': link:../../../prettier/config
       eslint-config-airbnb-base: 14.2.1_ee2ddb12623c985c36290f985ad5559c
       eslint-config-prettier: 8.3.0_eslint@7.32.0
@@ -231,6 +233,19 @@ packages:
       eslint: '>=7.5.0'
     dependencies:
       '@babel/core': 7.14.8
+      eslint: 7.32.0
+      eslint-scope: 5.1.1
+      eslint-visitor-keys: 2.1.0
+      semver: 6.3.0
+    dev: false
+
+  /@babel/eslint-parser/7.14.9_eslint@7.32.0:
+    resolution: {integrity: sha512-W3En2CT6iOZJ+jEujLlwL2h/Jraj6S/IHrh63nV+TfX83DYe9pI4pcu0Luj6/hJ2kIr/3hOttxzaEsSQnUKx+w==}
+    engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
+    peerDependencies:
+      '@babel/core': '>=7.11.0'
+      eslint: '>=7.5.0'
+    dependencies:
       eslint: 7.32.0
       eslint-scope: 5.1.1
       eslint-visitor-keys: 2.1.0

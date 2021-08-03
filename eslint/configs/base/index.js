@@ -5,8 +5,8 @@ module.exports = {
     'xo-space/esnext',
     require.resolve('./lib/common'),
     require.resolve('eslint-config-airbnb-base/rules/es6'),
-    require.resolve('./lib/last'),
     require.resolve('./lib/parser-config'),
+    require.resolve('./lib/last'),
   ],
   env: {
     node: false,
