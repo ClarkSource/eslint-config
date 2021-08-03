@@ -1,5 +1,17 @@
 'use strict';
 
+// @TODO Replace with
+// https://github.com/import-js/eslint-plugin-import
+// https://github.com/alexgorbatchev/eslint-import-resolver-typescript
+const disableNodeRequireAndImport = {
+  'node/no-extraneous-require': 'off',
+  'node/no-missing-require': 'off',
+  'node/no-unpublished-require': 'off',
+  'node/no-extraneous-import': 'off',
+  'node/no-missing-import': 'off',
+  'node/no-unpublished-import': 'off',
+};
+
 module.exports = {
   extends: ['@clark/node', '@clark/typescript'],
   env: {
@@ -27,6 +39,8 @@ module.exports = {
     },
   },
   rules: {
+    ...disableNodeRequireAndImport,
+
     'node/no-unsupported-features/es-builtins': 'off',
     'node/no-unsupported-features/es-syntax': 'off',
   },
@@ -46,9 +60,7 @@ module.exports = {
     ...require('@clark/eslint-config-node').overrides,
     {
       files: ['*.d.ts'],
-      rules: {
-        'node/no-missing-import': 'warn',
-      },
+      rules: { ...disableNodeRequireAndImport },
     },
   ],
 };

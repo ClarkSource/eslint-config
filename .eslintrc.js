@@ -1,3 +1,14 @@
+'use strict';
+
 module.exports = {
-  extends: ['@clark/eslint-config-node'],
+  overrides: [
+    {
+      files: ['*.js'],
+      extends: ['@clark/eslint-config-node'],
+    },
+    {
+      files: ['*.ts'],
+      extends: ['@clark/eslint-config-node-typescript'],
+    },
+  ],
 };

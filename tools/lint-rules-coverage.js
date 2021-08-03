@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-
-// eslint-disable-next-line no-process-exit
-if (process.version.startsWith('v10')) process.exit(0);
+/* eslint-disable no-console */
 
 const path = require('path');
 
@@ -12,7 +10,6 @@ const { CLIEngine } = require('eslint');
 
 const [baseConfigPath, ...additiveConfigNames] = process.argv.slice(2);
 const baseConfig = require(path.resolve(baseConfigPath));
-// eslint-disable-next-line node/no-unsupported-features/es-builtins
 const additiveConfigs = Object.fromEntries(
   additiveConfigNames.map((n) => {
     const normalizedName = naming.normalizePackageName(n, 'eslint-plugin');
@@ -26,7 +23,6 @@ const effectiveBaseConfig = cliEngine.getConfigForFile('foo.js');
 const baseRuleNames = Object.keys(effectiveBaseConfig.rules);
 
 const filterAdditiveRules = (predicate) =>
-  // eslint-disable-next-line node/no-unsupported-features/es-builtins
   Object.fromEntries(
     Object.entries(additiveConfigs).map(([name, config]) => [
       name,
