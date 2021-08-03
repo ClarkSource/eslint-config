@@ -8,10 +8,15 @@ const merge = require('lodash.merge');
 
 module.exports = {
   plugins: ['node'],
-  extends: ['@clark', 'plugin:node/recommended', '@clark/node-order-imports'],
+  extends: [
+    '@clark',
+    'plugin:node/recommended',
+    '@clark/node-order-imports',
+    '@clark/eslint-config/lib/last',
+  ],
   env: {
     node: true,
-    browser: false
+    browser: false,
   },
   overrides: [
     {
@@ -21,11 +26,11 @@ module.exports = {
           BASE_ABBREVIATIONS_LEVEL,
           merge(BASE_ABBREVIATIONS_CONFIG, {
             whitelist: {
-              EmberENV: true
-            }
-          })
-        ]
-      }
+              EmberENV: true,
+            },
+          }),
+        ],
+      },
     },
     {
       files: ['ember-try.js'],
@@ -35,11 +40,11 @@ module.exports = {
           merge(BASE_ABBREVIATIONS_CONFIG, {
             whitelist: {
               devDependencies: true,
-              env: true
-            }
-          })
-        ]
-      }
-    }
-  ]
+              env: true,
+            },
+          }),
+        ],
+      },
+    },
+  ],
 };

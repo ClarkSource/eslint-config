@@ -6,7 +6,7 @@ module.exports = {
   extends: [
     '@clark',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint'
+    '@clark/eslint-config/lib/last',
   ],
   rules: {
     indent: 'off',
@@ -15,8 +15,8 @@ module.exports = {
       'error',
       {
         assertionStyle: 'as',
-        objectLiteralTypeAssertions: 'allow-as-parameter'
-      }
+        objectLiteralTypeAssertions: 'allow-as-parameter',
+      },
     ],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-parameter-properties': 'error',
@@ -25,8 +25,8 @@ module.exports = {
       {
         ignoreRestSiblings: true,
         argsIgnorePattern: '^_',
-        caughtErrors: 'all' // https://mariusschulz.com/blog/optional-catch-binding-in-typescript
-      }
+        caughtErrors: 'all', // https://mariusschulz.com/blog/optional-catch-binding-in-typescript
+      },
     ],
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
@@ -133,40 +133,40 @@ module.exports = {
       'error',
       {
         selector: 'default',
-        format: ['camelCase']
+        format: ['camelCase'],
       },
       {
         selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE']
+        format: ['camelCase', 'UPPER_CASE'],
       },
       {
         selector: 'parameter',
         format: ['camelCase'],
-        leadingUnderscore: 'allow'
+        leadingUnderscore: 'allow',
       },
       {
         selector: 'memberLike',
         modifiers: ['private'],
         format: ['camelCase'],
-        leadingUnderscore: 'allow'
+        leadingUnderscore: 'allow',
       },
       {
         selector: 'enumMember',
         format: ['PascalCase'],
-        leadingUnderscore: 'forbid'
+        leadingUnderscore: 'forbid',
       },
       {
         selector: 'typeLike',
-        format: ['PascalCase']
+        format: ['PascalCase'],
       },
       {
         selector: 'interface',
         format: ['PascalCase'],
         custom: {
           regex: '^I[A-Z]',
-          match: false
-        }
-      }
+          match: false,
+        },
+      },
     ],
 
     '@typescript-eslint/array-type': 'error',
@@ -176,7 +176,7 @@ module.exports = {
      * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loss-of-precision.md
      */
     'no-loss-of-precision': 'off',
-    '@typescript-eslint/no-loss-of-precision': 'error'
+    '@typescript-eslint/no-loss-of-precision': 'error',
   },
   overrides: [
     {
@@ -201,8 +201,8 @@ module.exports = {
          * type are not changed.
          */
         'unicorn/prevent-abbreviations': 'off',
-        '@typescript-eslint/naming-convention': 'off'
-      }
+        '@typescript-eslint/naming-convention': 'off',
+      },
     },
     {
       /**
@@ -214,8 +214,8 @@ module.exports = {
        */
       files: '*.ts',
       rules: {
-        'no-undef': 'off'
-      }
-    }
-  ]
+        'no-undef': 'off',
+      },
+    },
+  ],
 };

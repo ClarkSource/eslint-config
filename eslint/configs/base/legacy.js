@@ -4,10 +4,10 @@ module.exports = {
   extends: [
     'xo-space',
     require.resolve('./lib/common'),
-    require.resolve('./lib/last')
+    require.resolve('./lib/last.legacy'),
   ],
   env: {
-    es6: false
+    es6: false,
   },
-  overrides: require('./lib/overrides').overrides
+  overrides: require('./lib/overrides').overrides,
 };
