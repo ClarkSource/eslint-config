@@ -1,21 +1,53 @@
-/* eslint-disable unicorn/no-array-for-each, no-param-reassign */
-
 import getPackage from '@clark/eslint-util-get-package';
-// eslint-disable-next-line node/no-unpublished-import
-import { Rule } from 'eslint';
+import type { Rule } from 'eslint';
 import { rules } from 'eslint-plugin-import-helpers';
+import type * as UpstreamImportType from 'eslint-plugin-import-helpers/lib/util/import-type';
+import type * as Upstream from 'eslint-plugin-import-helpers/rules/order-imports';
+
+import type { RuleContext } from '../types/eslint';
+import { clone, getOriginalOptions } from '../utils';
+
+export type {
+  NewLinesBetweenOption,
+  AlphabetizeOption,
+  AlphabetizeConfig,
+} from 'eslint-plugin-import-helpers/rules/order-imports';
 
 const PACKAGE = 'package';
+
+export type ValidImportType =
+  | UpstreamImportType.ValidImportType
+  | typeof PACKAGE;
+
+export type Groups<T = ValidImportType> = Upstream.Groups<T>;
+
+export interface RuleOptions extends Omit<Upstream.RuleOptions, 'groups'> {
+  groups?: Groups;
+}
+
 const MATCH_NONE = '/foo/';
+
+/**
+ * {@link https://github.com/Tibfib/eslint-plugin-import-helpers/blob/v1.1.0/src/rules/order-imports.ts#L18}
+ * {@link https://github.com/Tibfib/eslint-plugin-import-helpers/blob/v1.1.0/docs/rules/order-imports.md}
+ */
+export const DEFAULT_GROUPS = [
+  ['module'],
+  ['absolute'],
+  ['package'],
+  ['parent', 'sibling', 'index'],
+] as const;
 
 const ruleModule: Rule.RuleModule = {
   ...rules['order-imports'],
-  create(context) {
-    const options = context.options[0] || {};
-    const groups: (string | string[])[] = options.groups || [];
+  create(context: RuleContext<[options?: RuleOptions]>) {
+    const [firstOption, ...otherOptions] = getOriginalOptions(context);
 
-    let packageName: string | undefined;
-    function getPackageName() {
+    // Get a copy of the groups.
+    const originalGroups = clone(firstOption?.groups || DEFAULT_GROUPS);
+
+    let packageName: UpstreamImportType.RegExpGroup | undefined;
+    function getPackageName(): UpstreamImportType.RegExpGroup {
       if (packageName) return packageName;
 
       const fileName = context.getFilename();
@@ -35,31 +67,32 @@ const ruleModule: Rule.RuleModule = {
         return MATCH_NONE;
       }
 
-      packageName = `/^${packageJSON.name.replace('/', '\\/')}/?/`;
+      packageName = `/^${packageJSON.name.replace(/[./]/g, '\\$&')}($|\\/)/`;
       return packageName;
     }
 
-    groups.forEach((block, i) => {
-      if (block === PACKAGE) {
-        groups[i] = getPackageName();
-      } else if (Array.isArray(block)) {
-        block.forEach((group, j) => {
-          if (group === PACKAGE) {
-            block[j] = getPackageName();
-          }
+    const groups: Groups = originalGroups.map(
+      (block: ValidImportType | readonly ValidImportType[]) => {
+        if (block === PACKAGE) return getPackageName();
+        if (!Array.isArray(block))
+          return block as Exclude<typeof block, readonly any[]>;
+
+        return (block as readonly ValidImportType[]).map((group) => {
+          if (group === PACKAGE) return getPackageName();
+          return group;
         });
-      } else {
-        context.report({
-          message: `Invalid 'groups' config: ${block}`,
-          node: context.getScope().block,
-        });
-      }
+      },
+    );
+
+    // Cannot directly assign, because `Object.isSealed(context)`.
+    const patchedContext = Object.create(context, {
+      options: {
+        value: [{ ...firstOption, groups }, ...otherOptions],
+        writable: false,
+      },
     });
 
-    context.options[0] = options;
-    options.groups = groups;
-
-    return rules['order-imports'].create(context);
+    return rules['order-imports'].create(patchedContext);
   },
 };
 
