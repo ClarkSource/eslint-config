@@ -5,8 +5,8 @@ module.exports = {
     {
       files: ['**/.eslintrc.js'],
       env: {
-        node: true
-      }
-    }
-  ]
+        node: true,
+      },
+    },
+  ],
 };

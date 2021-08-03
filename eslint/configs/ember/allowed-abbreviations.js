@@ -7,5 +7,5 @@ module.exports = [
   // https://api.emberjs.com/ember/release/classes/RouteInfo
   'params',
   'paramNames',
-  'queryParams'
+  'queryParams',
 ];

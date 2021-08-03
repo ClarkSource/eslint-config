@@ -20,7 +20,7 @@ module.exports = {
             '/^qunit/',
             '/^ember-qunit/',
             '/^@ember/test-helpers/',
-            '/^ember-exam/'
+            '/^ember-exam/',
           ],
           // Ember.js modules
           [
@@ -28,16 +28,16 @@ module.exports = {
             '/^@ember/',
             '/^ember-data/',
             '/^@glimmer/',
-            '/^require$/'
+            '/^require$/',
           ],
           ['/^ember-/'],
           ['module'],
           ['absolute'],
           ['package', `/^dummy\\//`],
-          ['parent', 'sibling', 'index']
+          ['parent', 'sibling', 'index'],
         ],
-        alphabetize: { order: 'asc', ignoreCase: true }
-      }
-    ]
-  }
+        alphabetize: { order: 'asc', ignoreCase: true },
+      },
+    ],
+  },
 };

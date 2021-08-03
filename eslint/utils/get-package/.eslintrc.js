@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: '@clark/node-typescript'
+  extends: '@clark/node-typescript',
 };

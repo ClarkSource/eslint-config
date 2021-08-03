@@ -5,7 +5,7 @@ const [BASE_ABBREVIATIONS_LEVEL, BASE_ABBREVIATIONS_CONFIG] =
     'unicorn/prevent-abbreviations'
   ];
 const {
-  DEFAULT_IGNORED_PROPERTIES
+  DEFAULT_IGNORED_PROPERTIES,
 } = require('eslint-plugin-ember/lib/rules/avoid-leaking-state-in-ember-objects');
 const merge = require('lodash.merge');
 
@@ -16,7 +16,7 @@ module.exports = {
     '@clark/ember-order-imports',
     'plugin:ember/recommended',
     'plugin:ember-best-practices/recommended',
-    require.resolve('@clark/eslint-config/lib/parser-config')
+    require.resolve('@clark/eslint-config/lib/parser-config'),
   ],
   rules: {
     /**
@@ -147,8 +147,8 @@ module.exports = {
       [
         ...DEFAULT_IGNORED_PROPERTIES,
         'localClassNames',
-        'localClassNameBindings'
-      ]
+        'localClassNameBindings',
+      ],
     ],
 
     /**
@@ -235,10 +235,10 @@ module.exports = {
       merge(BASE_ABBREVIATIONS_CONFIG, {
         whitelist: require('./allowed-abbreviations').reduce(
           (object, keyword) => ({ ...object, [keyword]: true }),
-          {}
-        )
-      })
-    ]
+          {},
+        ),
+      }),
+    ],
   },
   overrides: [
     {
@@ -248,8 +248,8 @@ module.exports = {
       files: ['router.{js,ts}'],
       rules: {
         'array-callback-return': 'off',
-        '@typescript-eslint/no-empty-function': 'off'
-      }
-    }
-  ]
+        '@typescript-eslint/no-empty-function': 'off',
+      },
+    },
+  ],
 };

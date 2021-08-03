@@ -40,11 +40,11 @@ module.exports = {
             format: ['StrictPascalCase'],
             filter: {
               regex: 'Resolver|Router',
-              match: true
-            }
-          }
-        ]
-      }
-    }
-  ]
+              match: true,
+            },
+          },
+        ],
+      },
+    },
+  ],
 };

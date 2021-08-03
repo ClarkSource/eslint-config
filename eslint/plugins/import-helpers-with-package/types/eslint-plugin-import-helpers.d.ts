@@ -35,7 +35,7 @@ declare module 'eslint-plugin-import-helpers' {
             };
           };
           additionalProperties: false;
-        }
+        },
       ];
     };
 

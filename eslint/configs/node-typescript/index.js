@@ -4,7 +4,7 @@ module.exports = {
   extends: ['@clark/node', '@clark/typescript'],
   env: {
     node: true,
-    browser: false
+    browser: false,
   },
   settings: {
     node: {
@@ -15,7 +15,7 @@ module.exports = {
        * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/shebang.md#shared-settings
        */
       convertPath: {
-        '**/*.ts': ['^(.+?)\\.ts$', '$1.js']
+        '**/*.ts': ['^(.+?)\\.ts$', '$1.js'],
       },
 
       /**
@@ -23,12 +23,12 @@ module.exports = {
        *
        * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-import.md#shared-settings
        */
-      tryExtensions: ['.js', '.json', '.node', '.ts', '.d.ts']
-    }
+      tryExtensions: ['.js', '.json', '.node', '.ts', '.d.ts'],
+    },
   },
   rules: {
     'node/no-unsupported-features/es-builtins': 'off',
-    'node/no-unsupported-features/es-syntax': 'off'
+    'node/no-unsupported-features/es-syntax': 'off',
   },
 
   /**
@@ -47,8 +47,8 @@ module.exports = {
     {
       files: ['*.d.ts'],
       rules: {
-        'node/no-missing-import': 'warn'
-      }
-    }
-  ]
+        'node/no-missing-import': 'warn',
+      },
+    },
+  ],
 };
