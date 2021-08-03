@@ -3,5 +3,5 @@
 module.exports = {
   ...require('.'),
   arrowParens: 'avoid',
-  trailingComma: 'none'
+  trailingComma: 'none',
 };

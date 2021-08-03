@@ -8,8 +8,8 @@ module.exports = {
     {
       files: ['*.hbs', '*.html'],
       options: {
-        singleQuote: false
-      }
-    }
-  ]
+        singleQuote: false,
+      },
+    },
+  ],
 };
