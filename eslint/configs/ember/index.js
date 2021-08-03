@@ -13,6 +13,7 @@ module.exports = {
   plugins: ['ember', 'ember-best-practices'],
   extends: [
     '@clark/browser',
+    require.resolve('./ignore-patterns'),
     '@clark/ember-order-imports',
     'plugin:ember/recommended',
     'plugin:ember-best-practices/recommended',
