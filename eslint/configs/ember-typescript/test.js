@@ -1,12 +1,12 @@
 const {
   extends: extensions,
-  rules
+  rules,
 } = require('@clark/eslint-config-ember/test');
 
 module.exports = {
   extends: [require.resolve('./'), ...extensions.slice(1)],
   rules: {
     ...rules,
-    '@typescript-eslint/no-empty-function': 'off'
-  }
+    '@typescript-eslint/no-empty-function': 'off',
+  },
 };

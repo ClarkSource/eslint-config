@@ -7,7 +7,7 @@ const CACHE = new Map<Matcher, Map<string, Match>>();
 
 export function findUpWithCache(
   matcher: Matcher,
-  options?: Options
+  options?: Options,
 ): string | undefined {
   if (!CACHE.has(matcher)) CACHE.set(matcher, new Map<string, Match>());
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion

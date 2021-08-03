@@ -97,6 +97,6 @@ module.exports = {
      *
      * @see https://github.com/platinumazure/eslint-plugin-qunit/blob/master/docs/rules/no-negated-ok.md
      */
-    'qunit/no-negated-ok': 'error'
-  }
+    'qunit/no-negated-ok': 'error',
+  },
 };

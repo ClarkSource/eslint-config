@@ -6,10 +6,10 @@ module.exports = {
     require.resolve('./lib/common'),
     require.resolve('eslint-config-airbnb-base/rules/es6'),
     require.resolve('./lib/last'),
-    require.resolve('./lib/parser-config')
+    require.resolve('./lib/parser-config'),
   ],
   env: {
-    node: false
+    node: false,
   },
   rules: {
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: false }],
@@ -28,16 +28,16 @@ module.exports = {
       {
         VariableDeclarator: {
           array: true,
-          object: true
+          object: true,
         },
         AssignmentExpression: {
           array: true,
-          object: false
-        }
+          object: false,
+        },
       },
       {
-        enforceForRenamedProperties: false
-      }
+        enforceForRenamedProperties: false,
+      },
     ],
 
     'class-methods-use-this': 'off',
@@ -56,7 +56,7 @@ module.exports = {
      *
      * @see https://eslint.org/docs/rules/no-implicit-coercion
      */
-    'no-implicit-coercion': 'error'
+    'no-implicit-coercion': 'error',
   },
-  overrides: require('./lib/overrides').overrides
+  overrides: require('./lib/overrides').overrides,
 };

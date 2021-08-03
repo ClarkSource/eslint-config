@@ -4,10 +4,10 @@ module.exports = {
   plugins: ['unicorn', 'prettier'],
   extends: [
     'eslint:recommended',
-    ...['best-practices', 'errors', 'style', 'variables'].map(r =>
-      require.resolve(`eslint-config-airbnb-base/rules/${r}`)
+    ...['best-practices', 'errors', 'style', 'variables'].map((r) =>
+      require.resolve(`eslint-config-airbnb-base/rules/${r}`),
     ),
-    'plugin:unicorn/recommended'
+    'plugin:unicorn/recommended',
   ],
   rules: {
     /**
@@ -68,7 +68,7 @@ module.exports = {
      */
     'no-unused-expressions': [
       'error',
-      { allowShortCircuit: true, allowTernary: true }
+      { allowShortCircuit: true, allowTernary: true },
     ],
 
     'valid-jsdoc': 'off',
@@ -106,16 +106,16 @@ module.exports = {
       {
         replacements: {
           args: {
-            arguments: false
-          }
-        }
-      }
+            arguments: false,
+          },
+        },
+      },
     ],
 
     'lines-between-class-members': [
       'error',
       'always',
-      { exceptAfterSingleLine: true }
-    ]
-  }
+      { exceptAfterSingleLine: true },
+    ],
+  },
 };

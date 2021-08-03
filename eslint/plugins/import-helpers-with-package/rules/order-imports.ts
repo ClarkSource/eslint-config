@@ -23,14 +23,14 @@ const ruleModule: Rule.RuleModule = {
       if (!packageJSON) {
         context.report({
           message: `Could not find a valid 'package.json' for this file.`,
-          node: context.getScope().block
+          node: context.getScope().block,
         });
         return MATCH_NONE;
       }
       if (!packageJSON.name) {
         context.report({
           message: `Associated 'package.json' is missing a 'name' field.`,
-          node: context.getScope().block
+          node: context.getScope().block,
         });
         return MATCH_NONE;
       }
@@ -51,7 +51,7 @@ const ruleModule: Rule.RuleModule = {
       } else {
         context.report({
           message: `Invalid 'groups' config: ${block}`,
-          node: context.getScope().block
+          node: context.getScope().block,
         });
       }
     });
@@ -60,7 +60,7 @@ const ruleModule: Rule.RuleModule = {
     options.groups = groups;
 
     return rules['order-imports'].create(context);
-  }
+  },
 };
 
 export default ruleModule;
