@@ -13,7 +13,11 @@ const disableNodeRequireAndImport = {
 };
 
 module.exports = {
-  extends: ['@clark/node', '@clark/typescript'],
+  extends: [
+    '@clark/node',
+    '@clark/typescript',
+    'plugin:@clark/import-helpers-with-package/node',
+  ],
   env: {
     node: true,
     browser: false,

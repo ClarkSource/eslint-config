@@ -11,7 +11,7 @@ module.exports = {
   extends: [
     '@clark',
     'plugin:node/recommended',
-    '@clark/node-order-imports',
+    'plugin:@clark/import-helpers-with-package/node',
     '@clark/eslint-config/lib/last',
   ],
   env: {

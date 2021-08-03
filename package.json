@@ -16,6 +16,7 @@
   "devDependencies": {
     "@clark/eslint-config-node": "workspace:*",
     "@clark/eslint-config-node-typescript": "workspace:*",
+    "@clark/eslint-plugin-import-helpers-with-package": "workspace:*",
     "@clark/prettier-config": "workspace:*",
     "eslint": "^7.32.0",
     "typescript": "^4.3.5"

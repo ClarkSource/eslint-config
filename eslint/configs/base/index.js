@@ -5,6 +5,7 @@ module.exports = {
     'xo-space/esnext',
     require.resolve('./lib/common'),
     require.resolve('eslint-config-airbnb-base/rules/es6'),
+    'plugin:@clark/import-helpers-with-package/recommended',
     require.resolve('./lib/parser-config'),
     require.resolve('./lib/last'),
   ],

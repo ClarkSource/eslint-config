@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "@clark/eslint-config-node": "^2.2.0",
-    "@clark/eslint-config-typescript": "^2.2.0"
+    "@clark/eslint-config-typescript": "^2.2.0",
+    "@clark/eslint-plugin-import-helpers-with-package": "workspace:^"
   },
   "peerDependencies": {
     "typescript": "^3.3.3 || ^4.0.0"

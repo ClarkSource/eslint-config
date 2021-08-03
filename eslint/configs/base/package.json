@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.14.9",
+    "@clark/eslint-plugin-import-helpers-with-package": "workspace:^",
     "@clark/prettier-config": "^2.2.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
