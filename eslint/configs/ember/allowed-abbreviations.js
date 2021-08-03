@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = [
   // https://api.emberjs.com/ember/release/classes/Component
   'didReceiveAttrs',

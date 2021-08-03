@@ -25,17 +25,16 @@
   },
   "scripts": {
     "lint:rules": "lint-rules-coverage ./index.js @typescript-eslint",
-    "test": "printf '' | eslint -c ./index.js --stdin && printf '' | eslint -c ./test.js --stdin"
+    "test": "printf '' | eslint -c ./index.js --stdin && printf '' | eslint -c ./test.js --stdin && printf '' | eslint -c ./addon.js --stdin"
   },
   "dependencies": {
-    "@clark/eslint-config-ember": "^2.2.0",
-    "@clark/eslint-config-typescript": "^2.2.0"
+    "@clark/eslint-config-ember": "workspace:^",
+    "@clark/eslint-config-typescript": "workspace:^"
   },
   "peerDependencies": {
     "typescript": "^3.3.3 || ^4.0.0"
   },
   "devDependencies": {
-    "@clark/eslint-plugin-import-helpers-with-package": "workspace:*",
     "@clark/tools": "workspace:*"
   },
   "engines": {

@@ -23,12 +23,13 @@
     "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "scripts": {
-    "test": "printf '' | eslint -c ./index.js --stdin && printf '' | eslint -c ./test.js --stdin"
+    "test": "printf '' | eslint -c ./index.js --stdin && printf '' | eslint -c ./test.js --stdin && printf '' | eslint -c ./addon.js --stdin"
   },
   "dependencies": {
-    "@clark/eslint-config": "^2.2.0",
-    "@clark/eslint-config-browser": "^2.2.0",
-    "@clark/eslint-config-ember-order-imports": "^2.2.0",
+    "@clark/eslint-config": "workspace:^",
+    "@clark/eslint-config-browser": "workspace:^",
+    "@clark/eslint-config-ember-order-imports": "workspace:^",
+    "@clark/eslint-config-node": "workspace:^",
     "eslint-plugin-ember": "^10.5.1",
     "eslint-plugin-ember-best-practices": "^1.1.2",
     "eslint-plugin-qunit": "^5.4.0",

@@ -1,7 +1,10 @@
 'use strict';
 
 module.exports = {
-  extends: ['@clark/ember', '@clark/typescript'],
+  extends: [
+    require.resolve('@clark/eslint-config-ember'),
+    require.resolve('@clark/eslint-config-typescript'),
+  ],
 
   /**
    * Since the order of application is `ember` and _then_ `typescript`, rules

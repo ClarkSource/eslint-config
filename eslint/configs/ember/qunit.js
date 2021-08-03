@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   plugins: ['qunit'],
   extends: ['plugin:qunit/recommended', 'plugin:qunit/two'],

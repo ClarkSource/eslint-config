@@ -52,9 +52,10 @@ importers:
 
   eslint/configs/ember:
     specifiers:
-      '@clark/eslint-config': ^2.2.0
-      '@clark/eslint-config-browser': ^2.2.0
-      '@clark/eslint-config-ember-order-imports': ^2.2.0
+      '@clark/eslint-config': workspace:^
+      '@clark/eslint-config-browser': workspace:^
+      '@clark/eslint-config-ember-order-imports': workspace:^
+      '@clark/eslint-config-node': workspace:^
       '@clark/eslint-plugin-import-helpers-with-package': workspace:*
       eslint-plugin-ember: ^10.5.1
       eslint-plugin-ember-best-practices: ^1.1.2
@@ -64,6 +65,7 @@ importers:
       '@clark/eslint-config': link:../base
       '@clark/eslint-config-browser': link:../browser
       '@clark/eslint-config-ember-order-imports': link:../ember-order-imports
+      '@clark/eslint-config-node': link:../node
       eslint-plugin-ember: 10.5.1_eslint@7.32.0
       eslint-plugin-ember-best-practices: 1.1.2
       eslint-plugin-qunit: 5.4.0
@@ -79,15 +81,13 @@ importers:
 
   eslint/configs/ember-typescript:
     specifiers:
-      '@clark/eslint-config-ember': ^2.2.0
-      '@clark/eslint-config-typescript': ^2.2.0
-      '@clark/eslint-plugin-import-helpers-with-package': workspace:*
+      '@clark/eslint-config-ember': workspace:^
+      '@clark/eslint-config-typescript': workspace:^
       '@clark/tools': workspace:*
     dependencies:
       '@clark/eslint-config-ember': link:../ember
       '@clark/eslint-config-typescript': link:../typescript
     devDependencies:
-      '@clark/eslint-plugin-import-helpers-with-package': link:../../plugins/import-helpers-with-package
       '@clark/tools': link:../../../tools
 
   eslint/configs/node:
