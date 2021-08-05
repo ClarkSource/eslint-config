@@ -9,20 +9,17 @@
     "node.js",
     "typescript"
   ],
-  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
   "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/eslint/configs/node-typescript",
-  "license": "ISC",
-  "main": "index.js",
-  "publishConfig": {
-    "access": "public"
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ClarkSource/eslint-config.git"
   },
-  "bugs": {
-    "url": "https://github.com/ClarkSource/eslint-config/issues"
-  },
+  "license": "ISC",
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "main": "index.js",
   "scripts": {
     "lint:rules": "lint-rules-coverage ./index.js @typescript-eslint",
     "test": "printf '' | eslint -c ./index.js --stdin"
@@ -32,13 +29,16 @@
     "@clark/eslint-config-typescript": "^2.2.0",
     "@clark/eslint-plugin-import-helpers-with-package": "workspace:^"
   },
-  "peerDependencies": {
-    "typescript": "^3.3.3 || ^4.0.0"
-  },
   "devDependencies": {
     "@clark/tools": "workspace:*"
   },
+  "peerDependencies": {
+    "typescript": "^3.3.3 || ^4.0.0"
+  },
   "engines": {
     "node": "^12.20 || >=14.13"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

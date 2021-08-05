@@ -14,6 +14,7 @@
     "test": "pnpm --recursive --stream --no-bail run test",
     "prepare": "husky install"
   },
+  "prettier": "@clark/prettier-config",
   "devDependencies": {
     "@clark/eslint-config-node": "workspace:*",
     "@clark/eslint-config-node-typescript": "workspace:*",
@@ -31,7 +32,6 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "prettier": "@clark/prettier-config",
   "volta": {
     "node": "14.17.4",
     "npm": "7.20.3"

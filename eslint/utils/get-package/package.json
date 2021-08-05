@@ -7,20 +7,17 @@
     "eslint-util",
     "package"
   ],
-  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
   "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/eslint/utils/get-package",
-  "license": "ISC",
-  "main": "index.ts.js",
-  "publishConfig": {
-    "access": "public"
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ClarkSource/eslint-config.git"
   },
-  "bugs": {
-    "url": "https://github.com/ClarkSource/eslint-config/issues"
-  },
+  "license": "ISC",
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "main": "index.ts.js",
   "scripts": {
     "build": "tsc --build --force",
     "clean": "tsc --build --clean",
@@ -40,5 +37,8 @@
   },
   "engines": {
     "node": "^12.20 || >=14.13"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -8,20 +8,17 @@
     "ember",
     "ember.js"
   ],
-  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
   "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/eslint/configs/ember",
-  "license": "ISC",
-  "main": "index.js",
-  "publishConfig": {
-    "access": "public"
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ClarkSource/eslint-config.git"
   },
-  "bugs": {
-    "url": "https://github.com/ClarkSource/eslint-config/issues"
-  },
+  "license": "ISC",
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "main": "index.js",
   "scripts": {
     "test": "printf '' | eslint -c ./index.js --stdin && printf '' | eslint -c ./test.js --stdin && printf '' | eslint -c ./addon.js --stdin"
   },
@@ -40,5 +37,8 @@
   },
   "engines": {
     "node": "^12.20 || >=14.13"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

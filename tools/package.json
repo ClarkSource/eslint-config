@@ -2,9 +2,9 @@
   "name": "@clark/tools",
   "version": "0.0.0",
   "private": true,
-  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
   "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/eslint/configs/base",
   "license": "ISC",
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
   "bin": {
     "lint-rules-coverage": "./lint-rules-coverage.js",
     "patch-json-object": "./patch-json-object.js"
