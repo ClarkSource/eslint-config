@@ -1,6 +1,9 @@
 'use strict';
 
 module.exports = {
+  // Auto-sort all `package.json` files.
+  'package.json': 'sort-package-json',
+
   // Lint and auto-format all `.js` and `.ts` files with `eslint`, which also
   // includes `prettier` via the `prettier-eslint-plugin`.
   // Note the `--quiet`, to prevent auto-fixing `warning`-level issues.
