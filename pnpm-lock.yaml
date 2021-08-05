@@ -9,6 +9,7 @@ importers:
       '@clark/eslint-plugin-import-helpers-with-package': workspace:*
       '@clark/prettier-config': workspace:*
       eslint: ^7.32.0
+      husky: ^7.0.1
       typescript: ^4.3.5
     devDependencies:
       '@clark/eslint-config-node': link:eslint/configs/node
@@ -16,6 +17,7 @@ importers:
       '@clark/eslint-plugin-import-helpers-with-package': link:eslint/plugins/import-helpers-with-package
       '@clark/prettier-config': link:prettier/config
       eslint: 7.32.0
+      husky: 7.0.1
       typescript: 4.3.5
 
   eslint/configs/base:
@@ -1469,6 +1471,12 @@ packages:
   /hosted-git-info/2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
     dev: false
+
+  /husky/7.0.1:
+    resolution: {integrity: sha512-gceRaITVZ+cJH9sNHqx5tFwbzlLCVxtVZcusME8JYQ8Edy5mpGDOqD8QBCdMhpyo9a+JXddnujQ4rpY2Ff9SJA==}
+    engines: {node: '>=12'}
+    hasBin: true
+    dev: true
 
   /ignore/4.0.6:
     resolution: {integrity: sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==}
