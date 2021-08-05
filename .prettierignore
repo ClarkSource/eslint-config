@@ -1,12 +1,9 @@
-# Unignore all dotfiles, which are ignored by default.
-!.*
-
-# Ignore all dependencies.
-node_modules/
-
 # Ignore all Visual Studio Code workspace settings by default, unless explicitly
 # allowed. This way user-custom extensions don't interfere.
 .vscode/
 !.vscode/settings.json
 !.vscode/extensions.json
 !.vscode/launch.json
+
+# Generated files.
+pnpm-lock.yaml
