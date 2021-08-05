@@ -100,7 +100,7 @@ configs.
 // .eslintrc.js
 module.exports = {
   root: true,
-  extends: "@clark/node",
+  extends: '@clark/node',
 };
 ```
 
@@ -108,7 +108,7 @@ module.exports = {
 // addon/.eslintrc.js
 module.exports = {
   root: true,
-  extends: "@clark/ember-typescript",
+  extends: '@clark/ember-typescript',
 };
 ```
 
@@ -116,7 +116,7 @@ module.exports = {
 // addon-test-support/.eslintrc.js
 module.exports = {
   root: true,
-  extends: "@clark/ember-typescript",
+  extends: '@clark/ember-typescript',
 };
 ```
 
@@ -126,7 +126,7 @@ module.exports = {
   root: true,
   // Since `app` is merged with the parent app, which is not guaranteed to have
   // TypeScript installed, we need to restrict ourselves to JavaScript only.
-  extends: "@clark/ember",
+  extends: '@clark/ember',
 };
 ```
 
@@ -134,7 +134,7 @@ module.exports = {
 // tests/.eslintrc.js
 module.exports = {
   root: true,
-  extends: "@clark/ember-typescript/test",
+  extends: '@clark/ember-typescript/test',
 };
 ```
 
@@ -142,7 +142,7 @@ module.exports = {
 // tests/dummy/config/.eslintrc.js
 module.exports = {
   root: true,
-  extends: "@clark/node",
+  extends: '@clark/node',
 };
 ```
 
@@ -171,7 +171,7 @@ module.exports = {
 // .eslintrc.js
 module.exports = {
   root: true,
-  extends: "@clark/node",
+  extends: '@clark/node',
 };
 ```
 
@@ -179,7 +179,7 @@ module.exports = {
 // app/.eslintrc.js
 module.exports = {
   root: true,
-  extends: "@clark/ember-typescript",
+  extends: '@clark/ember-typescript',
 };
 ```
 
@@ -187,7 +187,7 @@ module.exports = {
 // tests/.eslintrc.js
 module.exports = {
   root: true,
-  extends: "@clark/ember-typescript/test",
+  extends: '@clark/ember-typescript/test',
 };
 ```
 
@@ -195,6 +195,6 @@ module.exports = {
 // tests/dummy/config/.eslintrc.js
 module.exports = {
   root: true,
-  extends: "@clark/node",
+  extends: '@clark/node',
 };
 ```

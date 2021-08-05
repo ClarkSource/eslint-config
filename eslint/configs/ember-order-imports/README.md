@@ -34,7 +34,7 @@ yarn add -D eslint @clark/eslint-config-ember-order-imports
 
 ```js
 module.exports = {
-  extends: ["@clark/ember-order-imports"],
+  extends: ['@clark/ember-order-imports'],
   rules: {
     // your rules here
   },

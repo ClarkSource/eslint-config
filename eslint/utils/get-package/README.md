@@ -17,17 +17,17 @@
 > Finds the `package.json` a source file belongs to.
 
 ```ts
-import getPackage from "@clark/eslint-util-get-package";
+import getPackage from '@clark/eslint-util-get-package';
 
 export const rules = {
-  "some-rule": {
+  'some-rule': {
     create(context) {
       const fileName = context.getFilename();
       const packageJSON = getPackage(fileName);
 
       if (!packageJSON)
         throw new Error(
-          `Could not find a 'package.json' that '${fileName}' belongs to.`
+          `Could not find a 'package.json' that '${fileName}' belongs to.`,
         );
 
       console.log(`'${fileName}' belongs to ${packageJSON.name}.`);
