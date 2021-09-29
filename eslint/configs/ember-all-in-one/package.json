@@ -1,0 +1,44 @@
+{
+  "name": "@clark/eslint-config-ember-all-in-one",
+  "version": "2.2.0",
+  "description": "CLARK's eslint-config for Ember.js",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "ember",
+    "ember.js"
+  ],
+  "homepage": "https://github.com/ClarkSource/eslint-config/tree/main/eslint/configs/ember",
+  "bugs": {
+    "url": "https://github.com/ClarkSource/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkSource/eslint-config.git"
+  },
+  "license": "ISC",
+  "author": "Jan Buschtöns <jan.buschtoens@clark.de>",
+  "main": "index.js",
+  "scripts": {
+    "test": "printf '' | eslint -c ./app.js --stdin && printf '' | eslint -c ./addon.js --stdin"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.15.7",
+    "@clark/eslint-config": "workspace:^",
+    "@clark/eslint-config-browser": "workspace:^",
+    "@clark/eslint-config-ember": "workspace:^",
+    "@clark/eslint-config-ember-typescript": "workspace:^",
+    "@clark/eslint-config-node": "workspace:^",
+    "@clark/eslint-config-typescript": "workspace:^",
+    "@clark/prettier-config": "workspace:^"
+  },
+  "devDependencies": {
+    "@clark/eslint-plugin-import-helpers-with-package": "workspace:*"
+  },
+  "engines": {
+    "node": "^12.20 || >=14.13"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

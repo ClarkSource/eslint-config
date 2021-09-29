@@ -81,6 +81,29 @@ importers:
     devDependencies:
       '@clark/eslint-plugin-import-helpers-with-package': link:../../plugins/import-helpers-with-package
 
+  eslint/configs/ember-all-in-one:
+    specifiers:
+      '@babel/eslint-parser': ^7.15.7
+      '@clark/eslint-config': workspace:^
+      '@clark/eslint-config-browser': workspace:^
+      '@clark/eslint-config-ember': workspace:^
+      '@clark/eslint-config-ember-typescript': workspace:^
+      '@clark/eslint-config-node': workspace:^
+      '@clark/eslint-config-typescript': workspace:^
+      '@clark/eslint-plugin-import-helpers-with-package': workspace:*
+      '@clark/prettier-config': workspace:^
+    dependencies:
+      '@babel/eslint-parser': 7.15.7_eslint@7.32.0
+      '@clark/eslint-config': link:../base
+      '@clark/eslint-config-browser': link:../browser
+      '@clark/eslint-config-ember': link:../ember
+      '@clark/eslint-config-ember-typescript': link:../ember-typescript
+      '@clark/eslint-config-node': link:../node
+      '@clark/eslint-config-typescript': link:../typescript
+      '@clark/prettier-config': link:../../../prettier/config
+    devDependencies:
+      '@clark/eslint-plugin-import-helpers-with-package': link:../../plugins/import-helpers-with-package
+
   eslint/configs/ember-order-imports:
     specifiers:
       '@clark/eslint-plugin-import-helpers-with-package': ^2.2.0
