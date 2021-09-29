@@ -234,6 +234,7 @@ module.exports = {
     'unicorn/prevent-abbreviations': [
       BASE_ABBREVIATIONS_LEVEL,
       merge(BASE_ABBREVIATIONS_CONFIG, {
+        // eslint-disable-next-line unicorn/prefer-object-from-entries
         whitelist: require('./allowed-abbreviations').reduce(
           (object, keyword) => ({ ...object, [keyword]: true }),
           {},

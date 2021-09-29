@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: ['xo-space/browser'],
+  extends: [require.resolve('eslint-config-xo/browser')],
   env: {
     node: false,
     browser: true,

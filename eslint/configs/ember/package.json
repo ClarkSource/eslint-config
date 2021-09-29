@@ -27,9 +27,9 @@
     "@clark/eslint-config-browser": "workspace:^",
     "@clark/eslint-config-ember-order-imports": "workspace:^",
     "@clark/eslint-config-node": "workspace:^",
-    "eslint-plugin-ember": "^10.5.1",
+    "eslint-plugin-ember": "^10.5.5",
     "eslint-plugin-ember-best-practices": "^1.1.2",
-    "eslint-plugin-qunit": "^5.4.0",
+    "eslint-plugin-qunit": "^6.2.0",
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {

@@ -2,7 +2,7 @@
 
 module.exports = {
   plugins: ['qunit'],
-  extends: ['plugin:qunit/recommended', 'plugin:qunit/two'],
+  extends: ['plugin:qunit/recommended'],
   rules: {
     /**
      * @TODO re-enable, once upstream bug is fixed.

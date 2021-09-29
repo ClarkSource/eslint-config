@@ -10,6 +10,9 @@ module.exports = {
     'plugin:unicorn/recommended',
   ],
   rules: {
+    'unicorn/prefer-module': 'off',
+    'unicorn/prefer-node-protocol': 'off',
+
     /**
      * Since this config is not browser specific, we disable any
      * browser-specific rules. They are re-enabled in `eslint-config-browser`.

@@ -6,13 +6,13 @@
     "url": "git@github.com:ClarkSource/eslint-config.git"
   },
   "scripts": {
-    "preinstall": "if [ \"$npm_config_user_agent\" = \"${npm_config_user_agent#*\"pnpm/\"}\" -a -x \"$(command -v npx)\" ]; then npx --quiet only-allow pnpm; fi",
     "clean": "pnpm --recursive exec rm -rf ./node_modules",
+    "preinstall": "if [ \"$npm_config_user_agent\" = \"${npm_config_user_agent#*\"pnpm/\"}\" -a -x \"$(command -v npx)\" ]; then npx --quiet only-allow pnpm; fi",
     "lint:js": "eslint --ext ts,js .",
-    "lint:types": "pnpm --recursive --stream --no-bail run lint:types",
     "lint:rules": "pnpm --recursive --stream --no-bail run lint:rules",
-    "test": "pnpm --recursive --stream --no-bail run test",
-    "prepare": "husky install"
+    "lint:types": "pnpm --recursive --stream --no-bail run lint:types",
+    "prepare": "husky install",
+    "test": "pnpm --recursive --stream --no-bail run test"
   },
   "prettier": "@clark/prettier-config",
   "devDependencies": {
@@ -21,10 +21,10 @@
     "@clark/eslint-plugin-import-helpers-with-package": "workspace:*",
     "@clark/prettier-config": "workspace:*",
     "eslint": "^7.32.0",
-    "husky": "^7.0.1",
-    "lint-staged": "^11.1.1",
-    "sort-package-json": "^1.50.0",
-    "typescript": "^4.3.5"
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "sort-package-json": "^1.52.0",
+    "typescript": "^4.4.3"
   },
   "engines": {
     "node": "^12.20 || >=14.13"

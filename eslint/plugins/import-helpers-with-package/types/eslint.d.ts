@@ -5,6 +5,6 @@ export interface RuleContext<Options extends unknown[]>
   options: Options;
 }
 
-export type OptionsOf<Rule extends Rule.RuleModule> = Parameters<
-  Rule['create']
+export type OptionsOf<R extends Rule.RuleModule> = Parameters<
+  R['create']
 >[0]['options'];
