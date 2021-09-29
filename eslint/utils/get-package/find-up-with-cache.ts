@@ -1,5 +1,11 @@
-import { sync as findUpSync, Options, Match } from 'find-up';
-export { Options, StopSymbol, Match } from 'find-up';
+import { findUpSync, Options, Match } from 'find-up';
+export {
+  Options,
+  findUpStop,
+  Match,
+  pathExists,
+  pathExistsSync,
+} from 'find-up';
 
 type Matcher = (directory: string) => Match;
 

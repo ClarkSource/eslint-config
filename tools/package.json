@@ -10,7 +10,7 @@
     "patch-json-object": "./patch-json-object.js"
   },
   "dependencies": {
-    "@eslint/eslintrc": "^0.4.3"
+    "@eslint/eslintrc": "^1.0.1"
   },
   "peerDependencies": {
     "eslint": "^7.32.0"
