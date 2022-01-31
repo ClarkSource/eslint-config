@@ -20,7 +20,7 @@
     "@clark/eslint-config-node-typescript": "workspace:*",
     "@clark/eslint-plugin-import-helpers-with-package": "workspace:*",
     "@clark/prettier-config": "workspace:*",
-    "eslint": "^7.32.0",
+    "eslint": "^8.8.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "sort-package-json": "^1.52.0",
